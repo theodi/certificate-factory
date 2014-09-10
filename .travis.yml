@@ -9,6 +9,7 @@ notifications:
     on_success: change
     on_failure: always
 env:
-  - BASE_URI='http://open-data-certificate.dev'
-  - ODC_USERNAME=''
-  - ODC_API_KEY=''
+  global:
+    - BASE_URI='http://open-data-certificate.dev'
+    - ODC_USERNAME=''
+    - ODC_API_KEY=''
