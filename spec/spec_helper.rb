@@ -1,6 +1,6 @@
 require 'simplecov'
 require 'simplecov-rcov'
-require 'csvlint'
+require 'certificate-factory'
 require 'pry'
 require 'webmock/rspec'
 require 'coveralls'
