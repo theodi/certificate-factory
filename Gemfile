@@ -6,4 +6,5 @@ ruby "2.1.0"
 gem 'httparty'
 gem 'rspec'
 gem 'simplecov'
+gem 'simplecov-rcov'
 gem 'coveralls'
