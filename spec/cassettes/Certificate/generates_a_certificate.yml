@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://pezholio%40gmail.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    body:
+      encoding: UTF-8
+      string: "{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}"
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Sep 2014 13:26:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"db678e7a55543332d36cfd9e6c93ade9\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c62cc7246a7a51d26ce954479a9cc793
+      X-Runtime:
+      - '21.626944'
+      Set-Cookie:
+      - _open-data-certificate_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTNhYjg1OTBiZTk2NDU2YTc1MzdhMjM4NTUxNDIwMzZjBjsAVA%3D%3D--d7d60ce78b8b6907e700ba6a87c4de61ec89a233;
+        path=/; HttpOnly
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":true,\"dataset_id\":2411,\"published\":true,\"errors\":[\"The
+        question 'webpage' is mandatory\",\"The question 'thirdPartyOrigin' is mandatory\",\"The
+        question 'thirdPartyOpen' is mandatory\",\"The question 'reference' is mandatory\",\"The
+        question 'currentDatasetUrl' is mandatory\",\"The question 'versionsTemplateUrl'
+        is mandatory\",\"The question 'crowdsourced' is mandatory\",\"The question
+        'serviceType' is mandatory\",\"The question 'crowdsourcedContent' is mandatory\",\"The
+        question 'claUrl' is mandatory\",\"The question 'cldsRecorded' is mandatory\",\"The
+        question 'seriesType' is mandatory\",\"The question 'currentDumpUrl' is mandatory\",\"The
+        question 'dumpsTemplateUrl' is mandatory\",\"The question 'dumpsUrl' is mandatory\",\"The
+        question 'changeFeedUrl' is mandatory\",\"The question 'dataNotApplicable'
+        is mandatory\",\"The question 'dataWaiver' is mandatory\",\"The question 'dataOtherWaiver'
+        is mandatory\",\"The question 'otherDataLicenceName' is mandatory\",\"The
+        question 'otherDataLicenceURL' is mandatory\",\"The question 'otherDataLicenceOpen'
+        is mandatory\",\"The question 'contentNotApplicable' is mandatory\",\"The
+        question 'contentWaiver' is mandatory\",\"The question 'contentOtherWaiver'
+        is mandatory\",\"The question 'account' is mandatory\",\"The question 'otherContentLicenceName'
+        is mandatory\",\"The question 'otherContentLicenceURL' is mandatory\",\"The
+        question 'otherContentLicenceOpen' is mandatory\",\"The question 'contentRightsURL'
+        is mandatory\",\"The question 'engagementTeamUrl' is mandatory\",\"The question
+        'existingExternalUrls' is mandatory\",\"The question 'reliableExternalUrls'
+        is mandatory\",\"The question 'appliedAnon' is mandatory\",\"The question
+        'dpStaff' is mandatory\"]}"
+    http_version: 
+  recorded_at: Wed, 10 Sep 2014 13:26:31 GMT
+recorded_with: VCR 2.9.3
