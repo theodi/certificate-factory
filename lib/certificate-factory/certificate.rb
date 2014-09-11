@@ -4,6 +4,7 @@ class Certificate
   base_uri ENV['BASE_URI']
   basic_auth ENV['ODC_USERNAME'], ENV['ODC_API_KEY']
   headers 'Content-Type' => 'application/json'
+  default_timeout 120
 
   def initialize(url)
     @url = url
