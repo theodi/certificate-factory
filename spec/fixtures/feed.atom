@@ -1,0 +1,97 @@
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>DGU - Custom query</title>
+  <link href="http://data.gov.uk/data/search" rel="alternate"/>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="self"/>
+  <id>tag:data.gov.uk,2012:/feeds/custom.atom?core_dataset=false&amp;unpublished=false&amp;license_id-is-ogl=true</id>
+  <updated>2014-09-11T09:21:30Z</updated>
+  <author>
+    <name>co-prod3.dh.bytemark.co.uk</name>
+    <uri>http://data.gov.uk</uri>
+  </author>
+  <subtitle>Recently created or updated datasets on DGU. Custom query: ''</subtitle>
+  <link href="http://data.gov.uk/feeds/custom.atom?page=2" rel="next"/>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="first"/>
+  <link href="http://data.gov.uk/feeds/custom.atom?page=563" rel="last"/>
+  <entry>
+    <title>Cambridgeshire County Council Management Band pay scales</title>
+    <link href="http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26" rel="alternate"/>
+    <id>tag:data.gov.uk,2012:/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26</id>
+    <summary type="html">This dataset contains the pay scale for Management Band roles within Cambridgeshire County Council.</summary>
+    <link length="13307" href="http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales" type="application/json" rel="enclosure"/>
+    <updated>2014-09-11T08:45:05Z</updated>
+    <published>2014-09-11T08:45:05Z</published>
+  </entry>
+  <entry>
+  <title>Great Britain Tourism Survey</title>
+    <link href="http://data.gov.uk/dataset/cae16900-ec34-47cf-adc1-fd8c20930b4f" rel="alternate"/>
+    <id>tag:data.gov.uk,2012:/dataset/cae16900-ec34-47cf-adc1-fd8c20930b4f</id>
+    <summary type="html">The survey is a national consumer survey measuring the volume and value of overnight trips taken by residents of the Great Britain. It is jointly sponsored by the Welsh Government, VisitEngland and VisitScotland. Results of the survey are published annually in the GB Tourist, with quarterly updates at a Wales level.Source agency: Welsh GovernmentDesignation: Official Statistics not designated as National StatisticsLanguage: EnglishAlternative title: Great Britain Tourism Survey - Results for Wales</summary>
+    <link length="22855" href="http://data.gov.uk/api/2/rest/package/great_britain_tourism_survey" type="application/json" rel="enclosure"/>
+    <category term="holidays-tourism"/>
+    <category term="leisure-and-culture"/>
+    <category term="people-and-places"/>
+    <category term="tourism"/>
+    <category term="travel-tourism"/>
+    <updated>2014-09-11T08:40:14Z</updated>
+    <published>2014-08-11T11:00:05Z</published>
+  </entry>
+  <entry>
+    <title>Children's centres inspections and outcomes</title>
+    <link href="http://data.gov.uk/dataset/eb9bd647-7366-4fed-8368-4c7df007f95a" rel="alternate"/>
+    <author>
+    <name>Office for Standards in Education, Children's Services and Skills</name>
+    </author>
+    <id>tag:data.gov.uk,2012:/dataset/eb9bd647-7366-4fed-8368-4c7df007f95a</id>
+    <summary type="html">This is the publication of 'Children's centres inspections and outcomes'Source agency: Office for Standards in Education, Children's Services and SkillsDesignation: Official Statistics not designated as National StatisticsLanguage: EnglishAlternative title: Children's centres inspections and outcomes</summary>
+    <link length="30317" href="http://data.gov.uk/api/2/rest/package/childrens_centres_inspections_and_outcomes" type="application/json" rel="enclosure"/>
+    <category term="child"/>
+    <category term="children"/>
+    <category term="children-education-and-skills"/>
+    <category term="education"/>
+    <category term="ofsted"/>
+    <category term="statistical-analysis"/>
+    <updated>2014-09-11T08:40:14Z</updated>
+    <published>2011-12-11T12:59:13Z</published>
+  </entry>
+  <entry>
+    <title>Vehicle Licensing Statistics Great Britain</title>
+    <link href="http://data.gov.uk/dataset/7f06a77b-444e-490a-a505-8fc8ed62268f" rel="alternate"/>
+    <author>
+    <name>Department for Transport</name>
+    </author>
+    <id>tag:data.gov.uk,2012:/dataset/7f06a77b-444e-490a-a505-8fc8ed62268f</id>
+    <summary type="html">This publication provides monthly new registrations of vehicles and quarterly licenced vehicle numbers in Great BritainSource agency: TransportDesignation: National StatisticsLanguage: EnglishAlternative title: VLS GB</summary>
+    <link length="177441" href="http://data.gov.uk/api/2/rest/package/vehicle_licensing_statistics_great_britain" type="application/json" rel="enclosure"/>
+    <category term="licensed-vehicles"/>
+    <category term="road-transport"/>
+    <category term="roads"/>
+    <category term="transport"/>
+    <category term="transport-and-infrastructure"/>
+    <category term="travel-and-transport"/>
+    <category term="vehicles"/>
+    <category term="veicle-registration"/>
+    <updated>2014-09-11T08:40:16Z</updated>
+    <published>2011-12-11T02:26:50Z</published>
+  </entry>
+  <entry>
+    <title>Driver and rider tests and instructor statistics</title>
+    <link href="http://data.gov.uk/dataset/14562744-5cf3-4c76-99c1-0ffc1bce6b52" rel="alternate"/>
+    <author>
+    <name>Department for Transport</name>
+    </author>
+    <id>tag:data.gov.uk,2012:/dataset/14562744-5cf3-4c76-99c1-0ffc1bce6b52</id>
+    <summary type="html">This release provides statistics about the number of practical driver and rider tests undertaken as well as approved driving instructor statistics.  Based on data from the Driving Standards Agency.Source agency: TransportDesignation: Official Statistics not designated as National StatisticsLanguage: EnglishAlternative title: Driver and rider tests and instructor statistics</summary>
+    <link length="59721" href="http://data.gov.uk/api/2/rest/package/driver_and_rider_tests_and_instructor_statistics" type="application/json" rel="enclosure"/>
+    <category term="driver"/>
+    <category term="instructor-statistics"/>
+    <category term="rider"/>
+    <category term="road-transport"/>
+    <category term="roads"/>
+    <category term="tests"/>
+    <category term="transport"/>
+    <category term="transport-and-infrastructure"/>
+    <category term="travel-and-transport"/>
+    <updated>2014-09-11T08:40:18Z</updated>
+    <published>2012-02-23T12:01:33Z</published>
+  </entry>
+</feed>

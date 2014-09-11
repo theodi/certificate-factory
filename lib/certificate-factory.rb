@@ -6,3 +6,4 @@ require 'dotenv'
 Dotenv.load
 
 require 'certificate-factory/certificate'
+require 'certificate-factory/factory'
