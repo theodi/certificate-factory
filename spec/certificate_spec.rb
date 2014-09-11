@@ -9,7 +9,7 @@ describe CertificateFactory::Certificate do
   it "generates the correct body" do
     certificate = CertificateFactory::Certificate.new(@url)
 
-    expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}")
+    expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"gb\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}")
   end
 
   it "generates a certificate", :vcr do
