@@ -16,8 +16,10 @@ module CertificateFactory
       @limit.times do |i|
         if feed_items[i].nil?
           @url = next_page
-          @limit = @limit - i
-          build
+          unless @url.nil?
+            @limit = @limit - i
+            build
+          end
         else
           url = link(feed_items[i])
           generate(url)
@@ -35,7 +37,7 @@ module CertificateFactory
     end
 
     def next_page
-      response["feed"]["link"].find { |l| l["rel"] == "next" }["href"]
+      response["feed"]["link"].find { |l| l["rel"] == "next" }["href"] rescue nil
     end
 
     def link(item)

@@ -59,4 +59,15 @@ describe CertificateFactory::Factory do
     expect(results.count).to eq(3)
   end
 
+  it "stops when it gets to the end of a feed", :vcr do
+    stub_request(:get, "http://data.gov.uk/feeds/custom.atom")
+                .to_return(body: load_fixture("one-page.atom"))
+
+    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 5)
+
+    results = factory.build
+
+    expect(results.count).to eq(1)
+  end
+
 end

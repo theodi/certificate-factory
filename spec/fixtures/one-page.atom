@@ -1,0 +1,23 @@
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>DGU - Custom query</title>
+  <link href="http://data.gov.uk/data/search" rel="alternate"/>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="self"/>
+  <id>tag:data.gov.uk,2012:/feeds/custom.atom?core_dataset=false&amp;unpublished=false&amp;license_id-is-ogl=true</id>
+  <updated>2014-09-11T09:21:30Z</updated>
+  <author>
+    <name>co-prod3.dh.bytemark.co.uk</name>
+    <uri>http://data.gov.uk</uri>
+  </author>
+  <subtitle>Recently created or updated datasets on DGU. Custom query: ''</subtitle>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="first"/>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="last"/>
+  <entry>
+    <title>Cambridgeshire County Council Management Band pay scales</title>
+    <link href="http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26" rel="alternate"/>
+    <id>tag:data.gov.uk,2012:/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26</id>
+    <summary type="html">This dataset contains the pay scale for Management Band roles within Cambridgeshire County Council.</summary>
+    <link length="13307" href="http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales" type="application/json" rel="enclosure"/>
+    <updated>2014-09-11T08:45:05Z</updated>
+    <published>2014-09-11T08:45:05Z</published>
+  </entry>
+</feed>
