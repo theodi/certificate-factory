@@ -7,3 +7,7 @@ Dotenv.load
 
 require 'certificate-factory/certificate'
 require 'certificate-factory/factory'
+
+module CertificateFactory
+
+end

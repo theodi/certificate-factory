@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-describe Certificate do
+describe CertificateFactory::Certificate do
 
   before(:each) do
     @url = "http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report"
   end
 
   it "generates the correct body" do
-    certificate = Certificate.new(@url)
+    certificate = CertificateFactory::Certificate.new(@url)
 
     expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}")
   end
 
   it "generates a certificate", :vcr do
-    certificate = Certificate.new(@url)
+    certificate = CertificateFactory::Certificate.new(@url)
     result = certificate.generate
 
     expect(result[:success]).to eq(true)

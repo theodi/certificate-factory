@@ -1,42 +1,46 @@
-class Certificate
-  include HTTParty
+module CertificateFactory
 
-  base_uri ENV['BASE_URI']
-  basic_auth ENV['ODC_USERNAME'], ENV['ODC_API_KEY']
-  headers 'Content-Type' => 'application/json'
-  default_timeout 120
+  class Certificate
+    include HTTParty
 
-  def initialize(url)
-    @url = url
-  end
+    base_uri ENV['BASE_URI']
+    basic_auth ENV['ODC_USERNAME'], ENV['ODC_API_KEY']
+    headers 'Content-Type' => 'application/json'
+    default_timeout 120
 
-  def generate
-    response = post
-    {
-      success: response["success"],
-      published: response["published"],
-      documentation_url: @url,
-      dataset_url: dataset_url(response["dataset_id"])
-    }
-  end
+    def initialize(url)
+      @url = url
+    end
 
-  def post
-    self.class.post("/datasets", body: body)
-  end
-
-  private
-
-    def body
+    def generate
+      response = post
       {
-        "jurisdiction" => "GB",
-        "dataset" => {
-          "documentationUrl" => @url
-        }
-      }.to_json
+        success: response["success"],
+        published: response["published"],
+        documentation_url: @url,
+        dataset_url: dataset_url(response["dataset_id"])
+      }
     end
 
-    def dataset_url(id)
-      "#{self.class.base_uri}/datasets/#{id}"
+    def post
+      self.class.post("/datasets", body: body)
     end
+
+    private
+
+      def body
+        {
+          "jurisdiction" => "GB",
+          "dataset" => {
+            "documentationUrl" => @url
+          }
+        }.to_json
+      end
+
+      def dataset_url(id)
+        "#{self.class.base_uri}/datasets/#{id}"
+      end
+
+  end
 
 end

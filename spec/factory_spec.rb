@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe Factory do
+describe CertificateFactory::Factory do
 
   it "parses the Atom feed correctly" do
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom")
                 .to_return(body: load_fixture("single-feed.atom"))
 
-    factory = Factory.new(feed: "http://data.gov.uk/feeds/custom.atom")
+    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom")
 
     feed_items = factory.feed_items
 
@@ -18,7 +18,7 @@ describe Factory do
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom")
                 .to_return(body: load_fixture("single-feed.atom"))
 
-    factory = Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 1)
+    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 1)
 
     results = factory.build
 
@@ -33,7 +33,7 @@ describe Factory do
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom")
                 .to_return(body: load_fixture("feed.atom"))
 
-    factory = Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 3)
+    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 3)
 
     results = factory.build
 
@@ -52,7 +52,7 @@ describe Factory do
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom?page=3")
                 .to_return(body: load_fixture("single-feed.atom"))
 
-    factory = Factory.new(feed: "http://data.gov.uk/feeds/custom.atom?core_dataset=false&unpublished=false&license_id-is-ogl=true", limit: 3)
+    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom?core_dataset=false&unpublished=false&license_id-is-ogl=true", limit: 3)
 
     results = factory.build
 
