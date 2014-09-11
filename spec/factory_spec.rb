@@ -52,7 +52,7 @@ describe CertificateFactory::Factory do
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom?page=3")
                 .to_return(body: load_fixture("single-feed.atom"))
 
-    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom?core_dataset=false&unpublished=false&license_id-is-ogl=true", limit: 3)
+    factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 3)
 
     results = factory.build
 
