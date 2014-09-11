@@ -30,7 +30,7 @@ module CertificateFactory
 
       def body
         {
-          "jurisdiction" => "GB",
+          "jurisdiction" => "gb",
           "dataset" => {
             "documentationUrl" => @url
           }
