@@ -19,7 +19,7 @@ namespace :generate do
 
   task :certificates do
     if ENV['URL']
-      limit = ENV['LIMIT'].to_i || 2
+      limit = ENV['LIMIT'] ? ENV['LIMIT'].to_i : 20
       results = CertificateFactory::Factory.new(feed: ENV['URL'], limit: limit).build
       CSV.open("results.csv", "w") do |csv|
         csv << ["Success?", "Published?", "Documenation URL", "Dataset URL"]
