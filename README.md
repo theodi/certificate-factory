@@ -20,7 +20,7 @@ from a CKAN Dataset or Data.gov.uk atom feed.
 		
 You can get your API key from your Account page when logged into the Open Data Certificates website
 
-If you are running your own instance of Open Data Certificates (such as on your own machine), simply replace the `BASE_URL` with the base URL the instance you want to generate certificates one.
+If you are running your own instance of Open Data Certificates (such as on your own machine), simply replace the `BASE_URL` with the URL of the instance you want to generate certificates on.
  
 ## Run some commands!
 
