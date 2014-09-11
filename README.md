@@ -18,7 +18,9 @@ from a CKAN Dataset or Data.gov.uk atom feed.
 		ODC_USERNAME='{YOUR OPEN DATA CERTIFICATE USERNAME}'
 		ODC_API_KEY='{YOUR OPEN DATA CERTIFICATE API KEY}'
 		
-(You can get your API key from your Account page when logged into the Open Data Certificates website)
+You can get your API key from your Account page when logged into the Open Data Certificates website
+
+If you are running your own instance of Open Data Certificates (such as on your own machine), simply replace the `BASE_URL` with the base URL the instance you want to generate certificates one.
  
 ## Run some commands!
 
