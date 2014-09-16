@@ -13,12 +13,13 @@ module CertificateFactory
     end
 
     def generate
-      response = post
+      response = JSON.parse post
       {
         success: response["success"],
         published: response["published"],
         documentation_url: @url,
-        dataset_url: dataset_url(response["dataset_id"])
+        dataset_url: dataset_url(response["dataset_id"]),
+        user: response["owner_email"]
       }
     end
 
