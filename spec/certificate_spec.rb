@@ -14,7 +14,7 @@ describe CertificateFactory::Certificate do
 
   it "generates a certificate" do
     stub_request(:post, "http://api%40example.com:abc123456@open-data-certificate.dev/datasets")
-                .to_return(body: load_fixture("certificate.json"))
+                .to_return(body: load_fixture("certificate.json"), :headers => {"Content-Type" => "application/json"})
 
     certificate = CertificateFactory::Certificate.new(@url)
     result = certificate.generate
