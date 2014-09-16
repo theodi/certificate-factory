@@ -13,7 +13,7 @@ module CertificateFactory
     end
 
     def generate
-      response = JSON.parse post
+      response = post
       {
         success: response["success"],
         published: response["published"],
