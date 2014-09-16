@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://pezholio%40gmail.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
     body:
       encoding: UTF-8
       string: "{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\"}}"
@@ -57,6 +57,6 @@ http_interactions:
         'existingExternalUrls' is mandatory\",\"The question 'reliableExternalUrls'
         is mandatory\",\"The question 'appliedAnon' is mandatory\",\"The question
         'dpStaff' is mandatory\"]}"
-    http_version: 
+    http_version:
   recorded_at: Thu, 11 Sep 2014 12:21:23 GMT
 recorded_with: VCR 2.9.3

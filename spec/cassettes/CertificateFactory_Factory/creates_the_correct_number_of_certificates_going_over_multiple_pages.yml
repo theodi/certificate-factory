@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://pezholio%40gmail.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
     body:
       encoding: UTF-8
       string: "{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\"}}"
@@ -61,7 +61,7 @@ http_interactions:
   recorded_at: Thu, 11 Sep 2014 13:21:16 GMT
 - request:
     method: post
-    uri: http://pezholio%40gmail.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
     body:
       encoding: UTF-8
       string: "{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\"}}"
@@ -120,7 +120,7 @@ http_interactions:
   recorded_at: Thu, 11 Sep 2014 13:21:34 GMT
 - request:
     method: post
-    uri: http://pezholio%40gmail.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
     body:
       encoding: UTF-8
       string: "{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\"}}"
