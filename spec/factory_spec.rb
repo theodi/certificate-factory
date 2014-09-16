@@ -25,7 +25,7 @@ describe CertificateFactory::Factory do
     expect(results.count).to eq(1)
     expect(results.first[:success]).to eq(true)
     expect(results.first[:published]).to eq(true)
-    expect(results.first[:documentation_url]).to eq("http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26")
+    expect(results.first[:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
     expect(results.first[:dataset_url]).to match /http:\/\/open-data-certificate.dev\/datasets\/[0-9]+/
   end
 
@@ -39,9 +39,9 @@ describe CertificateFactory::Factory do
 
     expect(results.count).to eq(3)
 
-    expect(results[0][:documentation_url]).to eq("http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26")
-    expect(results[1][:documentation_url]).to eq("http://data.gov.uk/dataset/cae16900-ec34-47cf-adc1-fd8c20930b4f")
-    expect(results[2][:documentation_url]).to eq("http://data.gov.uk/dataset/eb9bd647-7366-4fed-8368-4c7df007f95a")
+    expect(results[0][:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
+    expect(results[1][:documentation_url]).to eq("http://data.gov.uk/dataset/great_britain_tourism_survey")
+    expect(results[2][:documentation_url]).to eq("http://data.gov.uk/dataset/childrens_centres_inspections_and_outcomes")
   end
 
   it "creates the correct number of certificates going over multiple pages", :vcr do

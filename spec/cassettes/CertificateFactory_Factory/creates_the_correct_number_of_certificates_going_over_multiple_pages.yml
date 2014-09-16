@@ -177,4 +177,259 @@ http_interactions:
         'dpStaff' is mandatory\"]}"
     http_version: 
   recorded_at: Thu, 11 Sep 2014 13:21:53 GMT
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:35:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2770'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - 258804628 258804623
+      Age:
+      - '1'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - HIT
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        null, \"private\": false, \"maintainer_email\": null, \"id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"metadata_created\": \"2014-09-11T08:45:05.302023\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-11T08:45:05.313103\", \"author\": null, \"author_email\": null,
+        \"state\": \"active\", \"version\": null, \"creator_user_id\": \"edec0bc8-46b1-4266-94e0-77257e6ee87e\",
+        \"type\": \"dataset\", \"resources\": [{\"resource_group_id\": \"dd82640b-e02d-4921-9258-fb711bc5153c\",
+        \"cache_last_updated\": null, \"package_id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"webstore_last_updated\": null, \"id\": \"ae142d42-3456-4132-996b-df5c99bbf836\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Cambridgeshire County Council Management Band pay scales 2014\", \"format\":
+        \"CSV\", \"mimetype_inner\": null, \"url_type\": null, \"date\": \"2014-04-01\",
+        \"mimetype\": null, \"cache_url\": null, \"name\": null, \"created\": \"2014-09-11T09:45:05.351967\",
+        \"url\": \"http://www.cambridgeshire.gov.uk/download/downloads/id/3110/management_band_payscales.csv\",
+        \"webstore_url\": null, \"position\": 0, \"resource_type\": \"file\"}], \"num_resources\":
+        1, \"tags\": [], \"groups\": [], \"license_id\": \"uk-ogl\", \"num_tags\":
+        0, \"organization\": {\"description\": \"\", \"title\": \"Cambridgeshire County
+        Council\", \"created\": \"2012-06-27T14:49:31.613796\", \"approval_status\":
+        \"pending\", \"revision_timestamp\": \"2014-07-22T11:35:00.168201\", \"is_organization\":
+        true, \"state\": \"active\", \"image_url\": \"\", \"revision_id\": \"85796520-5663-4477-b49a-b4d4c3514ce7\",
+        \"type\": \"organization\", \"id\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"name\": \"cambridgeshire-county-council\"}, \"name\": \"cambridgeshire-county-council-management-band-pay-scales\",
+        \"isopen\": true, \"notes_rendered\": \"<p>This dataset contains the pay scale
+        for Management Band roles within Cambridgeshire County Council.\\n</p>\",
+        \"url\": null, \"ckan_url\": \"http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales\",
+        \"notes\": \"This dataset contains the pay scale for Management Band roles
+        within Cambridgeshire County Council.\", \"owner_org\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"ratings_average\": null, \"extras\": {\"contact-name\": \"\", \"temporal_coverage-from\":
+        \"\", \"contact-email\": \"\", \"foi-web\": \"\", \"foi-name\": \"\", \"temporal_coverage-to\":
+        \"\", \"foi-email\": \"\", \"contact-phone\": \"\", \"mandate\": \"\", \"date\":
+        \"01/04/2014\", \"update_frequency\": \"annual\", \"foi-phone\": \"\", \"unpublished\":
+        \"false\", \"theme-primary\": \"Government\"}, \"license_url\": \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"Cambridgeshire County Council Management
+        Band pay scales\", \"revision_id\": \"2cdcc85e-1f97-4520-a453-dede54ab81e2\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:35:05 GMT
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:35:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2770'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - 258804632 258804623
+      Age:
+      - '1'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - HIT
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        null, \"private\": false, \"maintainer_email\": null, \"id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"metadata_created\": \"2014-09-11T08:45:05.302023\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-11T08:45:05.313103\", \"author\": null, \"author_email\": null,
+        \"state\": \"active\", \"version\": null, \"creator_user_id\": \"edec0bc8-46b1-4266-94e0-77257e6ee87e\",
+        \"type\": \"dataset\", \"resources\": [{\"resource_group_id\": \"dd82640b-e02d-4921-9258-fb711bc5153c\",
+        \"cache_last_updated\": null, \"package_id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"webstore_last_updated\": null, \"id\": \"ae142d42-3456-4132-996b-df5c99bbf836\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Cambridgeshire County Council Management Band pay scales 2014\", \"format\":
+        \"CSV\", \"mimetype_inner\": null, \"url_type\": null, \"date\": \"2014-04-01\",
+        \"mimetype\": null, \"cache_url\": null, \"name\": null, \"created\": \"2014-09-11T09:45:05.351967\",
+        \"url\": \"http://www.cambridgeshire.gov.uk/download/downloads/id/3110/management_band_payscales.csv\",
+        \"webstore_url\": null, \"position\": 0, \"resource_type\": \"file\"}], \"num_resources\":
+        1, \"tags\": [], \"groups\": [], \"license_id\": \"uk-ogl\", \"num_tags\":
+        0, \"organization\": {\"description\": \"\", \"title\": \"Cambridgeshire County
+        Council\", \"created\": \"2012-06-27T14:49:31.613796\", \"approval_status\":
+        \"pending\", \"revision_timestamp\": \"2014-07-22T11:35:00.168201\", \"is_organization\":
+        true, \"state\": \"active\", \"image_url\": \"\", \"revision_id\": \"85796520-5663-4477-b49a-b4d4c3514ce7\",
+        \"type\": \"organization\", \"id\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"name\": \"cambridgeshire-county-council\"}, \"name\": \"cambridgeshire-county-council-management-band-pay-scales\",
+        \"isopen\": true, \"notes_rendered\": \"<p>This dataset contains the pay scale
+        for Management Band roles within Cambridgeshire County Council.\\n</p>\",
+        \"url\": null, \"ckan_url\": \"http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales\",
+        \"notes\": \"This dataset contains the pay scale for Management Band roles
+        within Cambridgeshire County Council.\", \"owner_org\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"ratings_average\": null, \"extras\": {\"contact-name\": \"\", \"temporal_coverage-from\":
+        \"\", \"contact-email\": \"\", \"foi-web\": \"\", \"foi-name\": \"\", \"temporal_coverage-to\":
+        \"\", \"foi-email\": \"\", \"contact-phone\": \"\", \"mandate\": \"\", \"date\":
+        \"01/04/2014\", \"update_frequency\": \"annual\", \"foi-phone\": \"\", \"unpublished\":
+        \"false\", \"theme-primary\": \"Government\"}, \"license_url\": \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"Cambridgeshire County Council Management
+        Band pay scales\", \"revision_id\": \"2cdcc85e-1f97-4520-a453-dede54ab81e2\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:35:05 GMT
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:35:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2770'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - 258804633 258804623
+      Age:
+      - '1'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - HIT
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        null, \"private\": false, \"maintainer_email\": null, \"id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"metadata_created\": \"2014-09-11T08:45:05.302023\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-11T08:45:05.313103\", \"author\": null, \"author_email\": null,
+        \"state\": \"active\", \"version\": null, \"creator_user_id\": \"edec0bc8-46b1-4266-94e0-77257e6ee87e\",
+        \"type\": \"dataset\", \"resources\": [{\"resource_group_id\": \"dd82640b-e02d-4921-9258-fb711bc5153c\",
+        \"cache_last_updated\": null, \"package_id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"webstore_last_updated\": null, \"id\": \"ae142d42-3456-4132-996b-df5c99bbf836\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Cambridgeshire County Council Management Band pay scales 2014\", \"format\":
+        \"CSV\", \"mimetype_inner\": null, \"url_type\": null, \"date\": \"2014-04-01\",
+        \"mimetype\": null, \"cache_url\": null, \"name\": null, \"created\": \"2014-09-11T09:45:05.351967\",
+        \"url\": \"http://www.cambridgeshire.gov.uk/download/downloads/id/3110/management_band_payscales.csv\",
+        \"webstore_url\": null, \"position\": 0, \"resource_type\": \"file\"}], \"num_resources\":
+        1, \"tags\": [], \"groups\": [], \"license_id\": \"uk-ogl\", \"num_tags\":
+        0, \"organization\": {\"description\": \"\", \"title\": \"Cambridgeshire County
+        Council\", \"created\": \"2012-06-27T14:49:31.613796\", \"approval_status\":
+        \"pending\", \"revision_timestamp\": \"2014-07-22T11:35:00.168201\", \"is_organization\":
+        true, \"state\": \"active\", \"image_url\": \"\", \"revision_id\": \"85796520-5663-4477-b49a-b4d4c3514ce7\",
+        \"type\": \"organization\", \"id\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"name\": \"cambridgeshire-county-council\"}, \"name\": \"cambridgeshire-county-council-management-band-pay-scales\",
+        \"isopen\": true, \"notes_rendered\": \"<p>This dataset contains the pay scale
+        for Management Band roles within Cambridgeshire County Council.\\n</p>\",
+        \"url\": null, \"ckan_url\": \"http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales\",
+        \"notes\": \"This dataset contains the pay scale for Management Band roles
+        within Cambridgeshire County Council.\", \"owner_org\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"ratings_average\": null, \"extras\": {\"contact-name\": \"\", \"temporal_coverage-from\":
+        \"\", \"contact-email\": \"\", \"foi-web\": \"\", \"foi-name\": \"\", \"temporal_coverage-to\":
+        \"\", \"foi-email\": \"\", \"contact-phone\": \"\", \"mandate\": \"\", \"date\":
+        \"01/04/2014\", \"update_frequency\": \"annual\", \"foi-phone\": \"\", \"unpublished\":
+        \"false\", \"theme-primary\": \"Government\"}, \"license_url\": \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"Cambridgeshire County Council Management
+        Band pay scales\", \"revision_id\": \"2cdcc85e-1f97-4520-a453-dede54ab81e2\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:35:05 GMT
 recorded_with: VCR 2.9.3

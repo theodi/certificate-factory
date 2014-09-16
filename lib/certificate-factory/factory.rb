@@ -21,7 +21,7 @@ module CertificateFactory
             build
           end
         else
-          url = link(feed_items[i])
+          url = get_link(feed_items[i])
           generate(url)
         end
       end
@@ -40,8 +40,13 @@ module CertificateFactory
       response["feed"]["link"].find { |l| l["rel"] == "next" }["href"] rescue nil
     end
 
-    def link(item)
-      item["link"].find { |l| l["rel"] == "alternate" }["href"]
+    def get_link(item)
+      api_url = item["link"].find { |l| l["rel"] == "enclosure" }["href"]
+      ckan_url(api_url)
+    end
+
+    def ckan_url(api_url)
+      CertificateFactory::API.new(api_url).ckan_url
     end
 
     def response
