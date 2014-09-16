@@ -6,7 +6,7 @@ module CertificateFactory
     base_uri ENV['BASE_URI']
     basic_auth ENV['ODC_USERNAME'], ENV['ODC_API_KEY']
     headers 'Content-Type' => 'application/json'
-    default_timeout 120
+    default_timeout 360
 
     def initialize(url)
       @url = url
