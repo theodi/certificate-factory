@@ -10,7 +10,7 @@ module CertificateFactory
       @response = self.class.get(@url)
     end
 
-    def link
+    def ckan_url
       @response['ckan_url']
     end
 
