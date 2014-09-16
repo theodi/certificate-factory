@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/nhs-england-primary-care-trusts-local-spending-data
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:30:05 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '4264'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - '258802775'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        \"NHS Financial Information & Accounts Branch, NHS Accounting Processes Section
+        \", \"private\": false, \"maintainer_email\": null, \"id\": \"59973e86-5e1f-45bd-b231-e541df65cda2\",
+        \"metadata_created\": \"2010-09-23T13:13:14.866379\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-12T21:05:50.543448\", \"author\": \"Department of Health Customer
+        Service Centre\", \"author_email\": null, \"state\": \"active\", \"version\":
+        null, \"creator_user_id\": null, \"type\": \"dataset\", \"resources\": [{\"resource_group_id\":
+        \"2531e75b-68a1-1ca7-b7a5-a8157b8b2560\", \"cache_last_updated\": null, \"package_id\":
+        \"59973e86-5e1f-45bd-b231-e541df65cda2\", \"webstore_last_updated\": null,
+        \"id\": \"045af25f-f72b-4cc3-a85e-be64dc4a0bd2\", \"size\": null, \"last_modified\":
+        null, \"hash\": \"\", \"description\": \"Spend data 2006-2010\", \"format\":
+        \"XLS\", \"mimetype_inner\": null, \"url_type\": null, \"mimetype\": null,
+        \"cache_url\": null, \"name\": null, \"created\": \"2014-09-12T22:05:50.608706\",
+        \"url\": \"http://webarchive.nationalarchives.gov.uk/20130107105354/http://www.dh.gov.uk/prod_consum_dh/groups/dh_digitalassets/@dh/@en/@ps/documents/digitalasset/dh_119508.xls\",
+        \"webstore_url\": null, \"position\": 0, \"resource_type\": \"file\"}], \"num_resources\":
+        1, \"tags\": [\"expenditure\", \"finance\", \"local-spend-data\", \"nhs\",
+        \"nhs-england\", \"nhs-local-spending-data\", \"primary-care-trusts\", \"spending\"],
+        \"groups\": [], \"license_id\": \"uk-ogl\", \"num_tags\": 8, \"organization\":
+        {\"description\": \"The Department of Health (DH) helps people to live better
+        for longer. We lead, shape and fund health and care in England, making sure
+        people have the support, care and treatment they need, with the compassion,
+        respect and dignity they deserve.\\r\\n\\r\\nDH is a ministerial department,
+        supported by 23 agencies and public bodies.\\r\\n\\r\\nhttps://www.gov.uk/government/organisations/department-of-health\\r\\n\",
+        \"title\": \"Department of Health\", \"created\": \"2012-06-27T14:48:41.338440\",
+        \"approval_status\": \"pending\", \"revision_timestamp\": \"2013-11-05T07:03:27.394488\",
+        \"is_organization\": true, \"state\": \"active\", \"image_url\": \"\", \"revision_id\":
+        \"2b10fb9f-ef12-4acd-9bd0-03f4c4a86c69\", \"type\": \"organization\", \"id\":
+        \"d7a32a99-60ee-451e-9c0b-ce2f30fecb6c\", \"name\": \"department-of-health\"},
+        \"name\": \"nhs-england-primary-care-trusts-local-spending-data\", \"isopen\":
+        true, \"notes_rendered\": \"<p>The spreadsheets provide expenditure data form
+        2006-2010, for Primary Care Trusts.\\n</p>\\n<p>To contact the Department
+        of Health Customer Service Centre about this data follow this link: <a href=\\\"http://www.info.doh.gov.uk/contactus.nsf/memo?openform.\\\"
+        target=\\\"_blank\\\" rel=\\\"nofollow\\\">http://www.info.doh.gov.uk/contactus.nsf/memo?openform.</a>\\n</p>\",
+        \"url\": \"http://www.dh.gov.uk/en/Publicationsandstatistics/Publications/PublicationsPolicyAndGuidance/DH_119505\",
+        \"ckan_url\": \"http://data.gov.uk/dataset/nhs-england-primary-care-trusts-local-spending-data\",
+        \"notes\": \"The spreadsheets provide expenditure data form 2006-2010, for
+        Primary Care Trusts.\\r\\n\\r\\nTo contact the Department of Health Customer
+        Service Centre about this data follow this link: http://www.info.doh.gov.uk/contactus.nsf/memo?openform.\\r\\n\",
+        \"owner_org\": \"d7a32a99-60ee-451e-9c0b-ce2f30fecb6c\", \"ratings_average\":
+        null, \"extras\": {\"temporal_coverage-from\": \"\", \"unpublished\": \"false\",
+        \"foi-email\": \"\", \"openness_score\": \"0\", \"temporal_granularity\":
+        \"year\", \"agency\": \"\", \"geographic_granularity\": \"point\", \"core-dataset\":
+        \"true\", \"temporal_coverage-to\": \"\", \"department\": \"Department of
+        Health\", \"foi-web\": \"\", \"contact-email\": \"\", \"foi-name\": \"\",
+        \"precision\": \"financial - \\u00a3thousands\", \"published_by\": \"Department
+        of Health [11410]\", \"contact-phone\": \"\", \"mandate\": \"\", \"categories\":
+        \"\", \"geographic_coverage\": \"100000: England\", \"contact-name\": \"\",
+        \"external_reference\": \"\", \"openness_score_last_checked\": \"2011-06-06T17:27:26.393843\",
+        \"update_frequency\": \"annual\", \"date_released\": \"2010-09-20\", \"foi-phone\":
+        \"\", \"theme-primary\": \"Spending\"}, \"license_url\": \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"NHS Local Spending Data - Primary Care
+        Trusts\", \"revision_id\": \"a6649f6f-745b-4435-99ae-bae0be317c14\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:30:08 GMT
+recorded_with: VCR 2.9.3

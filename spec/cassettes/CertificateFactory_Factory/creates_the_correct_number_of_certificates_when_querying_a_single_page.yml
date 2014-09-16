@@ -177,4 +177,354 @@ http_interactions:
         'dpStaff' is mandatory\"]}"
     http_version: 
   recorded_at: Thu, 11 Sep 2014 12:23:39 GMT
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:35:03 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '2770'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - 258804635 258804623
+      Age:
+      - '2'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - HIT
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        null, \"private\": false, \"maintainer_email\": null, \"id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"metadata_created\": \"2014-09-11T08:45:05.302023\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-11T08:45:05.313103\", \"author\": null, \"author_email\": null,
+        \"state\": \"active\", \"version\": null, \"creator_user_id\": \"edec0bc8-46b1-4266-94e0-77257e6ee87e\",
+        \"type\": \"dataset\", \"resources\": [{\"resource_group_id\": \"dd82640b-e02d-4921-9258-fb711bc5153c\",
+        \"cache_last_updated\": null, \"package_id\": \"4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\",
+        \"webstore_last_updated\": null, \"id\": \"ae142d42-3456-4132-996b-df5c99bbf836\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Cambridgeshire County Council Management Band pay scales 2014\", \"format\":
+        \"CSV\", \"mimetype_inner\": null, \"url_type\": null, \"date\": \"2014-04-01\",
+        \"mimetype\": null, \"cache_url\": null, \"name\": null, \"created\": \"2014-09-11T09:45:05.351967\",
+        \"url\": \"http://www.cambridgeshire.gov.uk/download/downloads/id/3110/management_band_payscales.csv\",
+        \"webstore_url\": null, \"position\": 0, \"resource_type\": \"file\"}], \"num_resources\":
+        1, \"tags\": [], \"groups\": [], \"license_id\": \"uk-ogl\", \"num_tags\":
+        0, \"organization\": {\"description\": \"\", \"title\": \"Cambridgeshire County
+        Council\", \"created\": \"2012-06-27T14:49:31.613796\", \"approval_status\":
+        \"pending\", \"revision_timestamp\": \"2014-07-22T11:35:00.168201\", \"is_organization\":
+        true, \"state\": \"active\", \"image_url\": \"\", \"revision_id\": \"85796520-5663-4477-b49a-b4d4c3514ce7\",
+        \"type\": \"organization\", \"id\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"name\": \"cambridgeshire-county-council\"}, \"name\": \"cambridgeshire-county-council-management-band-pay-scales\",
+        \"isopen\": true, \"notes_rendered\": \"<p>This dataset contains the pay scale
+        for Management Band roles within Cambridgeshire County Council.\\n</p>\",
+        \"url\": null, \"ckan_url\": \"http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales\",
+        \"notes\": \"This dataset contains the pay scale for Management Band roles
+        within Cambridgeshire County Council.\", \"owner_org\": \"d0149ce5-e526-4c09-8230-c8cc6a687f6a\",
+        \"ratings_average\": null, \"extras\": {\"contact-name\": \"\", \"temporal_coverage-from\":
+        \"\", \"contact-email\": \"\", \"foi-web\": \"\", \"foi-name\": \"\", \"temporal_coverage-to\":
+        \"\", \"foi-email\": \"\", \"contact-phone\": \"\", \"mandate\": \"\", \"date\":
+        \"01/04/2014\", \"update_frequency\": \"annual\", \"foi-phone\": \"\", \"unpublished\":
+        \"false\", \"theme-primary\": \"Government\"}, \"license_url\": \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"Cambridgeshire County Council Management
+        Band pay scales\", \"revision_id\": \"2cdcc85e-1f97-4520-a453-dede54ab81e2\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:35:06 GMT
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/great_britain_tourism_survey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:35:03 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '5874'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - '258804638'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        null, \"private\": false, \"maintainer_email\": null, \"id\": \"cae16900-ec34-47cf-adc1-fd8c20930b4f\",
+        \"metadata_created\": \"2014-08-11T11:00:05.652163\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-11T08:40:14.201877\", \"author\": null, \"author_email\": null,
+        \"state\": \"active\", \"version\": null, \"creator_user_id\": \"fe27eda4-4fcf-46e5-8818-5fdb2b0a52f9\",
+        \"type\": \"dataset\", \"resources\": [{\"resource_group_id\": \"fa88bd2b-405e-4e78-a354-65816609835a\",
+        \"cache_last_updated\": null, \"publish-date\": \"2014-08-11\", \"hub-id\":
+        \"119-74608\", \"package_id\": \"cae16900-ec34-47cf-adc1-fd8c20930b4f\", \"webstore_last_updated\":
+        null, \"id\": \"ad1145d9-f25d-47cd-9611-2156c9d0176c\", \"size\": null, \"last_modified\":
+        null, \"hash\": \"\", \"description\": \"Results for Wales - January to March
+        2014\", \"format\": \"\", \"mimetype_inner\": null, \"url_type\": null, \"mimetype\":
+        null, \"cache_url\": null, \"name\": null, \"created\": \"2014-08-12T09:40:16.062896\",
+        \"url\": \"http://wales.gov.uk/statistics-and-research/great-britain-tourist-survey/?lang=en\",
+        \"webstore_url\": null, \"position\": 0, \"resource_type\": null}, {\"resource_group_id\":
+        \"fa88bd2b-405e-4e78-a354-65816609835a\", \"cache_last_updated\": null, \"publish-date\":
+        \"2014-09-02\", \"hub-id\": \"119-74655\", \"package_id\": \"cae16900-ec34-47cf-adc1-fd8c20930b4f\",
+        \"webstore_last_updated\": null, \"id\": \"0b4aab6f-4034-43ec-a596-404ca6831403\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Results for Wales - 2013\", \"format\": \"\", \"mimetype_inner\": null,
+        \"url_type\": null, \"mimetype\": null, \"cache_url\": null, \"name\": null,
+        \"created\": \"2014-09-02T09:40:10.149478\", \"url\": \"http://wales.gov.uk/statistics-and-research/great-britain-tourist-survey/?lang=en\",
+        \"webstore_url\": null, \"position\": 1, \"resource_type\": null}, {\"resource_group_id\":
+        \"fa88bd2b-405e-4e78-a354-65816609835a\", \"cache_last_updated\": null, \"publish-date\":
+        \"2014-09-11\", \"hub-id\": \"119-74883\", \"package_id\": \"cae16900-ec34-47cf-adc1-fd8c20930b4f\",
+        \"webstore_last_updated\": null, \"id\": \"f4e4f1cc-8417-4759-9bde-55d23c459bde\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Results for Wales - January to April 2014\", \"format\": \"\", \"mimetype_inner\":
+        null, \"url_type\": null, \"mimetype\": null, \"cache_url\": null, \"name\":
+        null, \"created\": \"2014-09-11T09:40:13.637947\", \"url\": \"http://wales.gov.uk/statistics-and-research/great-britain-tourist-survey/?lang=en\",
+        \"webstore_url\": null, \"position\": 2, \"resource_type\": null}, {\"resource_group_id\":
+        \"fa88bd2b-405e-4e78-a354-65816609835a\", \"cache_last_updated\": null, \"publish-date\":
+        \"2014-09-11\", \"hub-id\": \"119-74885\", \"package_id\": \"cae16900-ec34-47cf-adc1-fd8c20930b4f\",
+        \"webstore_last_updated\": null, \"id\": \"1d8f1b99-7cec-4f3d-83c7-de281d1cc4d3\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"Results for Wales - January to May 2014\", \"format\": \"\", \"mimetype_inner\":
+        null, \"url_type\": null, \"mimetype\": null, \"cache_url\": null, \"name\":
+        null, \"created\": \"2014-09-11T09:40:14.254250\", \"url\": \"http://wales.gov.uk/statistics-and-research/great-britain-tourist-survey/?lang=en\",
+        \"webstore_url\": null, \"position\": 3, \"resource_type\": null}], \"num_resources\":
+        4, \"tags\": [\"holidays-tourism\", \"leisure-and-culture\", \"people-and-places\",
+        \"tourism\", \"travel-tourism\"], \"groups\": [], \"license_id\": \"uk-ogl\",
+        \"num_tags\": 5, \"organization\": {\"description\": \"\", \"title\": \"Welsh
+        Government\", \"created\": \"2012-06-27T14:48:42.634257\", \"approval_status\":
+        \"approved\", \"revision_timestamp\": \"2012-06-27T13:48:36.948477\", \"is_organization\":
+        true, \"state\": \"active\", \"image_url\": \"\", \"revision_id\": \"a1f4375a-4afe-4dad-88cd-03f2bd6adaaf\",
+        \"type\": \"organization\", \"id\": \"25f50b7d-c0e4-4f5a-97f5-4f9baea2eda1\",
+        \"name\": \"welsh-government\"}, \"name\": \"great_britain_tourism_survey\",
+        \"isopen\": true, \"notes_rendered\": \"<p>The survey is a national consumer
+        survey measuring the volume and value of overnight trips taken by residents
+        of the Great Britain. It is jointly sponsored by the Welsh Government, VisitEngland
+        and VisitScotland. Results of the survey are published annually in the GB
+        Tourist, with quarterly updates at a Wales level.\\n</p>\\n<p>Source agency:
+        Welsh Government\\n</p>\\n<p>Designation: Official Statistics not designated
+        as National Statistics\\n</p>\\n<p>Language: English\\n</p>\\n<p>Alternative
+        title: Great Britain Tourism Survey - Results for Wales\\n</p>\", \"url\":
+        null, \"ckan_url\": \"http://data.gov.uk/dataset/great_britain_tourism_survey\",
+        \"notes\": \"The survey is a national consumer survey measuring the volume
+        and value of overnight trips taken by residents of the Great Britain. It is
+        jointly sponsored by the Welsh Government, VisitEngland and VisitScotland.
+        Results of the survey are published annually in the GB Tourist, with quarterly
+        updates at a Wales level.\\n\\nSource agency: Welsh Government\\n\\nDesignation:
+        Official Statistics not designated as National Statistics\\n\\nLanguage: English\\n\\nAlternative
+        title: Great Britain Tourism Survey - Results for Wales\", \"owner_org\":
+        \"25f50b7d-c0e4-4f5a-97f5-4f9baea2eda1\", \"ratings_average\": null, \"extras\":
+        {\"geographic_coverage\": \"001000: Wales\", \"themes-secondary\": \"[\\\"Transport\\\"]\",
+        \"external_reference\": \"ONSHUB\", \"temporal_coverage-from\": \"\", \"temporal_granularity\":
+        \"\", \"date_updated\": \"2014-09-11\", \"series\": \"Great Britain Tourism
+        Survey\", \"precision\": \"\", \"geographic_granularity\": \"Country\", \"national_statistic\":
+        \"no\", \"import_source\": \"ONS-ons_data_1_days_to_2014-09-11\", \"temporal_coverage-to\":
+        \"\", \"update_frequency\": \"quarterly\", \"date_released\": \"2014-08-11\",
+        \"categories\": \"People and Places\", \"theme-primary\": \"Society\"}, \"license_url\":
+        \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"Great Britain Tourism Survey\", \"revision_id\":
+        \"57b7de8e-aa52-4bf5-afce-a09de0406817\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:35:06 GMT
+- request:
+    method: get
+    uri: http://data.gov.uk/api/2/rest/package/childrens_centres_inspections_and_outcomes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.0
+      Date:
+      - Tue, 16 Sep 2014 10:35:03 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '7475'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Cookie
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - X-CKAN-API-KEY, Authorization, Content-Type
+      Accept-Ranges:
+      - bytes
+      X-Varnish:
+      - '258804641'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      X-App:
+      - ckan
+      X-Varnish-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
+        null, \"private\": false, \"maintainer_email\": null, \"id\": \"eb9bd647-7366-4fed-8368-4c7df007f95a\",
+        \"metadata_created\": \"2011-12-11T12:59:13.758247\", \"relationships\": [],
+        \"license\": \"UK Open Government Licence (OGL)\", \"metadata_modified\":
+        \"2014-09-11T08:40:14.734765\", \"author\": \"Office for Standards in Education,
+        Children's Services and Skills\", \"author_email\": null, \"state\": \"active\",
+        \"version\": null, \"creator_user_id\": null, \"type\": \"dataset\", \"resources\":
+        [{\"resource_group_id\": \"0ce55e2e-0852-4b7f-a4d6-1c4a8bdc83f9\", \"cache_last_updated\":
+        \"2013-06-19T01:07:41.122173\", \"publish-date\": \"2011-03-08\", \"hub-id\":
+        \"119-59106\", \"package_id\": \"eb9bd647-7366-4fed-8368-4c7df007f95a\", \"webstore_last_updated\":
+        null, \"id\": \"6c28d5cd-b25c-478e-a78d-5c9bc02bbe5b\", \"size\": \"48560\",
+        \"cache_filepath\": \"/mnt/shared/ckan_resource_cache/6c/6c28d5cd-b25c-478e-a78d-5c9bc02bbe5b/official-statistics-childrens-centres-inspections-and-outcomes
+        published on 8 March 2012\", \"last_modified\": \"2014-05-09T23:10:42.278454\",
+        \"hash\": \"55c0817ae72314a379f1b2eca209eb5ab3a2ad70\", \"description\": \"as
+        of 31 December 2011\", \"format\": \"\", \"mimetype_inner\": null, \"url_type\":
+        null, \"mimetype\": \"text/html\", \"cache_url\": \"http://data.gov.uk/data/resource_cache/6c/6c28d5cd-b25c-478e-a78d-5c9bc02bbe5b/official-statistics-childrens-centres-inspections-and-outcomes
+        published on 8 March 2012\", \"name\": null, \"created\": \"2013-03-11T23:25:01.415642\",
+        \"url\": \"http://www.ofsted.gov.uk/resources/official-statistics-childrens-centres-inspections-and-outcomes
+        published on 8 March 2012\", \"webstore_url\": null, \"position\": 0, \"resource_type\":
+        null}, {\"resource_group_id\": \"0ce55e2e-0852-4b7f-a4d6-1c4a8bdc83f9\", \"cache_last_updated\":
+        \"2013-06-19T01:07:39.969991\", \"publish-date\": \"2011-09-08\", \"hub-id\":
+        \"119-54717\", \"package_id\": \"eb9bd647-7366-4fed-8368-4c7df007f95a\", \"webstore_last_updated\":
+        null, \"id\": \"83b86ee6-ad6d-4fc5-8553-be22f2591fb5\", \"size\": \"62150\",
+        \"cache_filepath\": \"/mnt/shared/ckan_resource_cache/83/83b86ee6-ad6d-4fc5-8553-be22f2591fb5/official-statistics-childrens-centres-inspections-and-outcomes\",
+        \"last_modified\": \"2014-05-09T23:10:43.421132\", \"hash\": \"8ce50a30653bca334a0ac7f7495c3844307714e0\",
+        \"description\": \"as of 30 June 2011\", \"format\": \"\", \"mimetype_inner\":
+        null, \"url_type\": null, \"mimetype\": \"text/html\", \"cache_url\": \"http://data.gov.uk/data/resource_cache/83/83b86ee6-ad6d-4fc5-8553-be22f2591fb5/official-statistics-childrens-centres-inspections-and-outcomes\",
+        \"name\": null, \"created\": \"2013-03-12T01:40:40.786760\", \"url\": \"http://www.ofsted.gov.uk/resources/official-statistics-childrens-centres-inspections-and-outcomes\",
+        \"webstore_url\": null, \"position\": 1, \"resource_type\": null}, {\"resource_group_id\":
+        \"0ce55e2e-0852-4b7f-a4d6-1c4a8bdc83f9\", \"cache_last_updated\": null, \"publish-date\":
+        \"2014-06-05\", \"hub-id\": \"119-73470\", \"package_id\": \"eb9bd647-7366-4fed-8368-4c7df007f95a\",
+        \"webstore_last_updated\": null, \"id\": \"875bd509-10f0-47ee-ab3c-8783e84dd8fb\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"November 2013 to March 2014\", \"format\": \"\", \"mimetype_inner\": null,
+        \"url_type\": null, \"mimetype\": null, \"cache_url\": null, \"name\": null,
+        \"created\": \"2014-06-05T09:40:09.472861\", \"url\": \"http://www.ofsted.gov.uk/resources/official-statistics-childrens-centres-inspections-and-outcomes\",
+        \"webstore_url\": null, \"position\": 2, \"resource_type\": null}, {\"resource_group_id\":
+        \"0ce55e2e-0852-4b7f-a4d6-1c4a8bdc83f9\", \"cache_last_updated\": null, \"publish-date\":
+        \"2014-09-11\", \"hub-id\": \"119-73474\", \"package_id\": \"eb9bd647-7366-4fed-8368-4c7df007f95a\",
+        \"webstore_last_updated\": null, \"id\": \"cdd13cea-8cc8-42e8-a7b7-01d970051c2c\",
+        \"size\": null, \"last_modified\": null, \"hash\": \"\", \"description\":
+        \"April to June 2014\", \"format\": \"\", \"mimetype_inner\": null, \"url_type\":
+        null, \"mimetype\": null, \"cache_url\": null, \"name\": null, \"created\":
+        \"2014-09-11T09:40:14.776896\", \"url\": \"http://www.ofsted.gov.uk/resources/official-statistics-childrens-centres-inspections-and-outcomes\",
+        \"webstore_url\": null, \"position\": 3, \"resource_type\": null}], \"num_resources\":
+        4, \"tags\": [\"child\", \"children\", \"children-education-and-skills\",
+        \"education\", \"ofsted\", \"statistical-analysis\"], \"groups\": [], \"license_id\":
+        \"uk-ogl\", \"num_tags\": 6, \"organization\": {\"description\": \"The Office
+        for Standards in Education, Children\\u2019s Services and Skills (Ofsted)
+        regulates and inspects childcare and children\\u2019s social care. It also
+        inspects schools, colleges, initial teacher education, work-based learning
+        and skills training, adult and community learning, education and training
+        in prisons and other secure establishments, and the Children and Family Court
+        Advisory Support Service (Cafcass). Additionally, Ofsted assesses children\\u2019s
+        services in local areas, and inspects services for looked-after children,
+        safeguarding and child protection.\\r\\nOfsted is a non-ministerial department
+        of the Department for Education\\r\\n\\r\\nhttp://www.ofsted.gov.uk/\", \"title\":
+        \"Office for Standards in Education, Children's Services and Skills\", \"created\":
+        \"2012-06-27T14:48:58.670706\", \"approval_status\": \"pending\", \"revision_timestamp\":
+        \"2013-11-04T07:43:04.296944\", \"is_organization\": true, \"state\": \"active\",
+        \"image_url\": \"\", \"revision_id\": \"5c230c75-b0c7-4416-84f3-ec835944960a\",
+        \"type\": \"organization\", \"id\": \"03e5767e-ce67-45f4-84ea-1e34f97a80a2\",
+        \"name\": \"office-for-standards-in-education-childrens-services-and-skills\"},
+        \"name\": \"childrens_centres_inspections_and_outcomes\", \"isopen\": true,
+        \"notes_rendered\": \"<p>This is the publication of 'Children's centres inspections
+        and outcomes'\\n</p>\\n<p>Source agency: Office for Standards in Education,
+        Children's Services and Skills\\n</p>\\n<p>Designation: Official Statistics
+        not designated as National Statistics\\n</p>\\n<p>Language: English\\n</p>\\n<p>Alternative
+        title: Children's centres inspections and outcomes\\n</p>\", \"url\": null,
+        \"ckan_url\": \"http://data.gov.uk/dataset/childrens_centres_inspections_and_outcomes\",
+        \"notes\": \"This is the publication of 'Children's centres inspections and
+        outcomes'\\n\\nSource agency: Office for Standards in Education, Children's
+        Services and Skills\\n\\nDesignation: Official Statistics not designated as
+        National Statistics\\n\\nLanguage: English\\n\\nAlternative title: Children's
+        centres inspections and outcomes\", \"owner_org\": \"03e5767e-ce67-45f4-84ea-1e34f97a80a2\",
+        \"ratings_average\": null, \"extras\": {\"geographic_coverage\": \"111100:
+        United Kingdom (England, Scotland, Wales, Northern Ireland)\", \"geographical_granularity\":
+        \"Other\", \"external_reference\": \"ONSHUB\", \"last_major_modification\":
+        \"2013-03-12T01:40:40.749632\", \"temporal_coverage-from\": \"\", \"date_updated\":
+        \"2014-09-11\", \"series\": \"Children's centres inspections and outcomes\",
+        \"published_via\": \"\", \"temporal_granularity\": \"\", \"precision\": \"\",
+        \"geographic_granularity\": \"Other\", \"theme-secondary\": \"[\\\"Education\\\"]\",
+        \"published_by\": \"Office for Standards in Education, Children's Services
+        and Skills [11547]\", \"national_statistic\": \"no\", \"import_source\": \"ONS-ons_data_1_days_to_2014-09-11\",
+        \"temporal_coverage-to\": \"\", \"update_frequency\": \"\", \"date_released\":
+        \"2011-03-08\", \"categories\": \"Children, Education and Skills\", \"theme-primary\":
+        \"Society\"}, \"license_url\": \"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/\",
+        \"ratings_count\": 0, \"title\": \"Children's centres inspections and outcomes\",
+        \"revision_id\": \"9440a542-6245-4011-8660-fa7d6161cdb3\"}"
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 10:35:07 GMT
 recorded_with: VCR 2.9.3
