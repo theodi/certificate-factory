@@ -1,0 +1,305 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    body:
+      encoding: UTF-8
+      string: "{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}"
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - bbe4d72227f9ddec960fee1cd25fe0c2
+      X-Runtime:
+      - '3.126289'
+      Set-Cookie:
+      - _open-data-certificate_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWJlY2M3OGIxODRjMjVjNjU0M2Q4OGQ4ZWIzM2EzZDY2BjsAVA%3D%3D--c1dd563d73796dee40600e34d192763facddf269;
+        path=/; HttpOnly
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:21 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3fe0d6fa01b3d036a62080416413b3f1\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9ff83b7dc2672d69a08a710916757675
+      X-Runtime:
+      - '0.034262'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:21 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3fe0d6fa01b3d036a62080416413b3f1\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 755e401c636eed603795316ab67b2c1f
+      X-Runtime:
+      - '0.024905'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:26 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3fe0d6fa01b3d036a62080416413b3f1\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3a76a767b308028274af97d9892a424a
+      X-Runtime:
+      - '0.021230'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:31 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3fe0d6fa01b3d036a62080416413b3f1\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bfe295ade0b29c1835d0d443b49ee451
+      X-Runtime:
+      - '0.027753'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:37 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3fe0d6fa01b3d036a62080416413b3f1\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0b2ab7d5f454fe6e0e7d8427e2867452
+      X-Runtime:
+      - '0.124021'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:42 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3fe0d6fa01b3d036a62080416413b3f1\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b3c5e049f58e261afb079f2623ae64f8
+      X-Runtime:
+      - '0.027952'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2657,\"dataset_url\":\"<BASE_URI>/datasets/2657.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:47 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2657.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:11:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"e62a8ebd2e282c43c2b6c903550a7565\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4d59bbb309d70e1b27686adfbd795e9
+      X-Runtime:
+      - '0.102206'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":true,\"dataset_id\":2657,\"published\":true,\"owner_email\":\"<ODC_USERNAME>\",\"errors\":[\"The
+        question 'webpage' is mandatory\",\"The question 'thirdPartyOrigin' is mandatory\",\"The
+        question 'thirdPartyOpen' is mandatory\",\"The question 'reference' is mandatory\",\"The
+        question 'currentDatasetUrl' is mandatory\",\"The question 'versionsTemplateUrl'
+        is mandatory\",\"The question 'crowdsourced' is mandatory\",\"The question
+        'serviceType' is mandatory\",\"The question 'crowdsourcedContent' is mandatory\",\"The
+        question 'claUrl' is mandatory\",\"The question 'cldsRecorded' is mandatory\",\"The
+        question 'seriesType' is mandatory\",\"The question 'currentDumpUrl' is mandatory\",\"The
+        question 'dumpsTemplateUrl' is mandatory\",\"The question 'dumpsUrl' is mandatory\",\"The
+        question 'changeFeedUrl' is mandatory\",\"The question 'dataNotApplicable'
+        is mandatory\",\"The question 'dataWaiver' is mandatory\",\"The question 'dataOtherWaiver'
+        is mandatory\",\"The question 'otherDataLicenceName' is mandatory\",\"The
+        question 'otherDataLicenceURL' is mandatory\",\"The question 'otherDataLicenceOpen'
+        is mandatory\",\"The question 'contentNotApplicable' is mandatory\",\"The
+        question 'contentWaiver' is mandatory\",\"The question 'contentOtherWaiver'
+        is mandatory\",\"The question 'account' is mandatory\",\"The question 'otherContentLicenceName'
+        is mandatory\",\"The question 'otherContentLicenceURL' is mandatory\",\"The
+        question 'otherContentLicenceOpen' is mandatory\",\"The question 'contentRightsURL'
+        is mandatory\",\"The question 'engagementTeamUrl' is mandatory\",\"The question
+        'existingExternalUrls' is mandatory\",\"The question 'reliableExternalUrls'
+        is mandatory\",\"The question 'appliedAnon' is mandatory\",\"The question
+        'dpStaff' is mandatory\"]}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:11:52 GMT
+recorded_with: VCR 2.9.3

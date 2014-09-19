@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/1.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Sep 2014 13:39:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"7d8fb6c904023f95d3098ce2ac0d9342\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 60205d94202fc6652fbb74054f04e252
+      X-Runtime:
+      - '0.050958'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":true,\"dataset_id\":1,\"published\":false,\"owner_email\":\"holly@whiteoctober.co.uk\",\"errors\":[\"The
+        question 'publisherRights' is mandatory\",\"The question 'publisherOrigin'
+        is mandatory\",\"The question 'publisher' is mandatory\",\"The question 'thirdPartyOrigin'
+        is mandatory\",\"The question 'listing' is mandatory\",\"The question 'thirdPartyOpen'
+        is mandatory\",\"The question 'crowdsourced' is mandatory\",\"The question
+        'reference' is mandatory\",\"The question 'currentDatasetUrl' is mandatory\",\"The
+        question 'crowdsourcedContent' is mandatory\",\"The question 'serviceType'
+        is mandatory\",\"The question 'versionsTemplateUrl' is mandatory\",\"The question
+        'claUrl' is mandatory\",\"The question 'versionsUrl' is mandatory\",\"The
+        question 'cldsRecorded' is mandatory\",\"The question 'frequentChanges' is
+        mandatory\",\"The question 'seriesType' is mandatory\",\"The question 'currentDumpUrl'
+        is mandatory\",\"The question 'dumpsTemplateUrl' is mandatory\",\"The question
+        'dumpsUrl' is mandatory\",\"The question 'changeFeedUrl' is mandatory\",\"The
+        question 'vocabulary' is mandatory\",\"The question 'dataLicence' is mandatory\",\"The
+        question 'dataNotApplicable' is mandatory\",\"The question 'codelists' is
+        mandatory\",\"The question 'dataWaiver' is mandatory\",\"The question 'dataOtherWaiver'
+        is mandatory\",\"The question 'otherDataLicenceName' is mandatory\",\"The
+        question 'otherDataLicenceURL' is mandatory\",\"The question 'otherDataLicenceOpen'
+        is mandatory\",\"The question 'contentLicence' is mandatory\",\"The question
+        'contentNotApplicable' is mandatory\",\"The question 'contentWaiver' is mandatory\",\"The
+        question 'contentOtherWaiver' is mandatory\",\"The question 'otherContentLicenceName'
+        is mandatory\",\"The question 'otherContentLicenceURL' is mandatory\",\"The
+        question 'account' is mandatory\",\"The question 'otherContentLicenceOpen'
+        is mandatory\",\"The question 'dataPersonal' is mandatory\",\"The question
+        'appliedAnon' is mandatory\",\"The question 'engagementTeamUrl' is mandatory\",\"The
+        question 'existingExternalUrls' is mandatory\",\"The question 'reliableExternalUrls'
+        is mandatory\",\"The question 'dpStaff' is mandatory\"]}"
+    http_version: 
+  recorded_at: Thu, 18 Sep 2014 13:39:00 GMT
+recorded_with: VCR 2.9.3
