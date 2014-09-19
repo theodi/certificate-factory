@@ -23,6 +23,7 @@ describe CertificateFactory::Certificate do
   it "returns an error if dataset already exists", :vcr do
     stub_request(:post, "http://#{ENV['ODC_USERNAME']}:#{ENV['ODC_API_KEY']}@open-data-certificate.dev/datasets")
           .to_return(body: {success: "false", errors: ["Dataset already exists"]}.to_json,
+                     status: 422,
                      headers: {content_type: "application/json"})
 
     certificate = CertificateFactory::Certificate.new(@url)
