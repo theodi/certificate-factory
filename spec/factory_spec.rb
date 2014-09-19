@@ -48,15 +48,18 @@ describe CertificateFactory::Factory do
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom")
                 .to_return(body: load_fixture("single-feed.atom"))
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom?page=2")
-                .to_return(body: load_fixture("single-feed.atom"))
+                .to_return(body: load_fixture("single-feed-1.atom"))
     stub_request(:get, "http://data.gov.uk/feeds/custom.atom?page=3")
-                .to_return(body: load_fixture("single-feed.atom"))
+                .to_return(body: load_fixture("single-feed-2.atom"))
 
     factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 3)
 
     results = factory.build
 
     expect(results.count).to eq(3)
+    expect(results[0][:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
+    expect(results[1][:documentation_url]).to eq("http://data.gov.uk/dataset/national-coach-services")
+    expect(results[2][:documentation_url]).to eq("http://data.gov.uk/dataset/gp_earnings_and_expenses")
   end
 
   it "stops when it gets to the end of a feed", :vcr do
