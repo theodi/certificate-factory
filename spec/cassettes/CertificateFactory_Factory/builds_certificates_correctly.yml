@@ -1,65 +1,6 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
-    body:
-      encoding: UTF-8
-      string: "{\"jurisdiction\":\"GB\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/4820b7ee-e960-4d65-9bbd-bf05fdd5dd26\"}}"
-    headers:
-      Content-Type:
-      - application/json
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Thu, 11 Sep 2014 12:21:23 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      X-Ua-Compatible:
-      - IE=Edge
-      Etag:
-      - "\"b4b5f5904c17e7b4a14ce4215cd9e5fa\""
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 4293f7bfcea70e5be722cd57bbbcf72f
-      X-Runtime:
-      - '16.706988'
-      Set-Cookie:
-      - _open-data-certificate_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTlmYzBlOWZhMjMzZWEzNDRkNTA4ODVmN2VkMmJjZDEyBjsAVA%3D%3D--b15b6505830b65d593692a683508680db92e49e5;
-        path=/; HttpOnly
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: "{\"success\":true,\"dataset_id\":2582,\"published\":true,\"errors\":[\"The
-        question 'webpage' is mandatory\",\"The question 'thirdPartyOrigin' is mandatory\",\"The
-        question 'thirdPartyOpen' is mandatory\",\"The question 'reference' is mandatory\",\"The
-        question 'currentDatasetUrl' is mandatory\",\"The question 'versionsTemplateUrl'
-        is mandatory\",\"The question 'crowdsourced' is mandatory\",\"The question
-        'serviceType' is mandatory\",\"The question 'crowdsourcedContent' is mandatory\",\"The
-        question 'claUrl' is mandatory\",\"The question 'cldsRecorded' is mandatory\",\"The
-        question 'seriesType' is mandatory\",\"The question 'currentDumpUrl' is mandatory\",\"The
-        question 'dumpsTemplateUrl' is mandatory\",\"The question 'dumpsUrl' is mandatory\",\"The
-        question 'changeFeedUrl' is mandatory\",\"The question 'dataNotApplicable'
-        is mandatory\",\"The question 'dataWaiver' is mandatory\",\"The question 'dataOtherWaiver'
-        is mandatory\",\"The question 'otherDataLicenceName' is mandatory\",\"The
-        question 'otherDataLicenceURL' is mandatory\",\"The question 'otherDataLicenceOpen'
-        is mandatory\",\"The question 'contentNotApplicable' is mandatory\",\"The
-        question 'contentWaiver' is mandatory\",\"The question 'contentOtherWaiver'
-        is mandatory\",\"The question 'account' is mandatory\",\"The question 'otherContentLicenceName'
-        is mandatory\",\"The question 'otherContentLicenceURL' is mandatory\",\"The
-        question 'otherContentLicenceOpen' is mandatory\",\"The question 'contentRightsURL'
-        is mandatory\",\"The question 'engagementTeamUrl' is mandatory\",\"The question
-        'existingExternalUrls' is mandatory\",\"The question 'reliableExternalUrls'
-        is mandatory\",\"The question 'appliedAnon' is mandatory\",\"The question
-        'dpStaff' is mandatory\"]}"
-    http_version: 
-  recorded_at: Thu, 11 Sep 2014 12:21:23 GMT
-- request:
     method: get
     uri: http://data.gov.uk/api/2/rest/package/cambridgeshire-county-council-management-band-pay-scales
     body:
@@ -74,7 +15,7 @@ http_interactions:
       Server:
       - nginx/1.6.0
       Date:
-      - Tue, 16 Sep 2014 10:35:01 GMT
+      - Fri, 19 Sep 2014 08:24:48 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
@@ -97,15 +38,15 @@ http_interactions:
       Accept-Ranges:
       - bytes
       X-Varnish:
-      - '258804623'
+      - 2133355364 2133354772
       Age:
-      - '0'
+      - '93'
       Via:
       - 1.1 varnish
       X-App:
       - ckan
       X-Varnish-Cache:
-      - MISS
+      - HIT
     body:
       encoding: UTF-8
       string: "{\"license_title\": \"UK Open Government Licence (OGL)\", \"maintainer\":
@@ -143,5 +84,237 @@ http_interactions:
         \"ratings_count\": 0, \"title\": \"Cambridgeshire County Council Management
         Band pay scales\", \"revision_id\": \"2cdcc85e-1f97-4520-a453-dede54ab81e2\"}"
     http_version: 
-  recorded_at: Tue, 16 Sep 2014 10:35:04 GMT
+  recorded_at: Fri, 19 Sep 2014 08:24:48 GMT
+- request:
+    method: post
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    body:
+      encoding: UTF-8
+      string: "{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales\"}}"
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:24:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1fd3ba64f594bae55f398a6f3667847f
+      X-Runtime:
+      - '1.971744'
+      Set-Cookie:
+      - _open-data-certificate_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJTI0ODE5ZmNkYmZkNzdlYmFiOTc4MGVmMjU5NmFkNzU2BjsAVA%3D%3D--4724ad76afacaed735450cca158654a042c04243;
+        path=/; HttpOnly
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2669,\"dataset_url\":\"<BASE_URI>/datasets/2669.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:24:50 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2669.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:24:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3011530dd86ae18dfc247543902e6b45\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7a3f67aee577d476549d8e291a7f1665
+      X-Runtime:
+      - '0.126572'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2669,\"dataset_url\":\"<BASE_URI>/datasets/2669.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:24:51 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2669.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:24:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3011530dd86ae18dfc247543902e6b45\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2ca2dcb79d3714a3bd39f790c228672d
+      X-Runtime:
+      - '0.030819'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2669,\"dataset_url\":\"<BASE_URI>/datasets/2669.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:24:56 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2669.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:25:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3011530dd86ae18dfc247543902e6b45\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1580dd91a3d58d39e245c393118f7d44
+      X-Runtime:
+      - '0.029231'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2669,\"dataset_url\":\"<BASE_URI>/datasets/2669.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:25:01 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2669.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:25:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"3011530dd86ae18dfc247543902e6b45\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a0efa9abc460103b46ae4ab7b66e4144
+      X-Runtime:
+      - '0.024930'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2669,\"dataset_url\":\"<BASE_URI>/datasets/2669.json\"}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:25:06 GMT
+- request:
+    method: get
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets/2669.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Sep 2014 08:25:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - "\"16612a68ca5f3195cd4e96324e8c73bc\""
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d8dd56b6cc164b2c96657251f0adc218
+      X-Runtime:
+      - '0.121507'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":true,\"dataset_id\":2669,\"published\":true,\"owner_email\":\"<ODC_USERNAME>\",\"errors\":[\"The
+        question 'webpage' is mandatory\",\"The question 'thirdPartyOrigin' is mandatory\",\"The
+        question 'thirdPartyOpen' is mandatory\",\"The question 'reference' is mandatory\",\"The
+        question 'currentDatasetUrl' is mandatory\",\"The question 'versionsTemplateUrl'
+        is mandatory\",\"The question 'crowdsourced' is mandatory\",\"The question
+        'serviceType' is mandatory\",\"The question 'crowdsourcedContent' is mandatory\",\"The
+        question 'claUrl' is mandatory\",\"The question 'cldsRecorded' is mandatory\",\"The
+        question 'seriesType' is mandatory\",\"The question 'currentDumpUrl' is mandatory\",\"The
+        question 'dumpsTemplateUrl' is mandatory\",\"The question 'dumpsUrl' is mandatory\",\"The
+        question 'changeFeedUrl' is mandatory\",\"The question 'dataNotApplicable'
+        is mandatory\",\"The question 'dataWaiver' is mandatory\",\"The question 'dataOtherWaiver'
+        is mandatory\",\"The question 'otherDataLicenceName' is mandatory\",\"The
+        question 'otherDataLicenceURL' is mandatory\",\"The question 'otherDataLicenceOpen'
+        is mandatory\",\"The question 'contentNotApplicable' is mandatory\",\"The
+        question 'contentWaiver' is mandatory\",\"The question 'contentOtherWaiver'
+        is mandatory\",\"The question 'account' is mandatory\",\"The question 'otherContentLicenceName'
+        is mandatory\",\"The question 'otherContentLicenceURL' is mandatory\",\"The
+        question 'otherContentLicenceOpen' is mandatory\",\"The question 'contentRightsURL'
+        is mandatory\",\"The question 'engagementTeamUrl' is mandatory\",\"The question
+        'existingExternalUrls' is mandatory\",\"The question 'reliableExternalUrls'
+        is mandatory\",\"The question 'appliedAnon' is mandatory\",\"The question
+        'dpStaff' is mandatory\"]}"
+    http_version: 
+  recorded_at: Fri, 19 Sep 2014 08:25:11 GMT
 recorded_with: VCR 2.9.3

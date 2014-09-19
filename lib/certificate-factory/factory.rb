@@ -29,7 +29,7 @@ module CertificateFactory
     end
 
     def generate(url)
-      @certificates << Certificate.new(url).generate
+      @certificates << Certificate.new(url).result
     end
 
     def feed_items
