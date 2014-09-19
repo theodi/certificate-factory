@@ -14,7 +14,7 @@ module CertificateFactory
 
     def generate
       response = post
-      if response["success"] == "pending"
+      if response.code == 202
         @dataset_url = response["dataset_url"]
         {
           success: "pending",
@@ -78,7 +78,7 @@ module CertificateFactory
       end
 
       def get_error(response)
-        if response["errors"]
+        if response.code == 422
           response["errors"].first
         elsif response.code == 401
           "Username and / or API key not recognised"
