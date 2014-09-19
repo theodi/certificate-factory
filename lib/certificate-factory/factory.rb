@@ -17,6 +17,7 @@ module CertificateFactory
         if feed_items[i].nil?
           @url = next_page
           unless @url.nil?
+            @response = self.class.get(@url)
             @limit = @limit - i
             build
           end
