@@ -1,6 +1,6 @@
 ENV['BASE_URI'] = "http://open-data-certificate.dev"
 ENV['ODC_USERNAME'] = "api@example.com"
-ENV['ODC_API_KEY'] = "abc123456"
+ENV['ODC_API_KEY'] = "Ra1v78QHDCpbu1Pq2XCJ"
 
 require 'simplecov'
 require 'simplecov-rcov'

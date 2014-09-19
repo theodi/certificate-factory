@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api%40example.com:<ODC_API_KEY>@open-data-certificate.dev/datasets
+    body:
+      encoding: UTF-8
+      string: "{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}"
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Thu, 18 Sep 2014 13:04:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 1d923b5a2ddd07df6f6d43f8813c4665
+      X-Runtime:
+      - '1.789400'
+      Set-Cookie:
+      - _open-data-certificate_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRkkiJWViNzUwZTIxMDMzMjg4MzNmNTZjYjJlZmRkODhkZjVmBjsAVA%3D%3D--5a08b1131355a8c3152372494d71b4e8ddb58120;
+        path=/; HttpOnly
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\"success\":\"pending\",\"dataset_id\":2615,\"dataset_url\":\"<BASE_URI>/datasets/2615.json\"}"
+    http_version: 
+  recorded_at: Thu, 18 Sep 2014 13:04:09 GMT
+recorded_with: VCR 2.9.3

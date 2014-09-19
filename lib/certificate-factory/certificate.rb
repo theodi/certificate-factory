@@ -14,13 +14,41 @@ module CertificateFactory
 
     def generate
       response = post
-      {
-        success: response["success"],
-        published: response["published"],
-        documentation_url: @url,
-        dataset_url: dataset_url(response["dataset_id"]),
-        user: response["owner_email"]
-      }
+      if response.code == 202
+        @dataset_url = response["dataset_url"]
+        {
+          success: "pending",
+          documentation_url: @url,
+          dataset_url: @dataset_url
+        }
+      else
+        {
+          success: "false",
+          published: "false",
+          documentation_url: @url,
+          error: get_error(response)
+        }
+      end
+    end
+
+    def result
+      if @dataset_url
+        result = get_result(@dataset_url)
+        {
+          success: result["success"],
+          published: result["published"],
+          documentation_url: @url,
+          certificate_url: result["certificate_url"],
+          user: result["owner_email"]
+        }
+      else
+        response = generate
+        if @dataset_url
+          self.result
+        else
+          response
+        end
+      end
     end
 
     def post
@@ -32,14 +60,31 @@ module CertificateFactory
       def body
         {
           "jurisdiction" => "gb",
+          "create_user" => "true",
           "dataset" => {
             "documentationUrl" => @url
           }
         }.to_json
       end
 
-      def dataset_url(id)
-        "#{self.class.base_uri}/datasets/#{id}"
+      def get_result(url)
+        result = self.class.get(url)
+        if result["success"] == "pending"
+          sleep 5
+          get_result(url)
+        else
+          result
+        end
+      end
+
+      def get_error(response)
+        if response.code == 422
+          response["errors"].first
+        elsif response.code == 401
+          "Username and / or API key not recognised"
+        else
+          "Unknown error"
+        end
       end
 
   end

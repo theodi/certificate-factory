@@ -1,0 +1,26 @@
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>DGU - Custom query</title>
+  <link href="http://data.gov.uk/data/search" rel="alternate"/>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="self"/>
+  <id>tag:data.gov.uk,2012:/feeds/custom.atom?core_dataset=false&amp;unpublished=false&amp;license_id-is-ogl=true</id>
+  <updated>2014-09-11T09:21:30Z</updated>
+  <author>
+    <name>co-prod3.dh.bytemark.co.uk</name>
+    <uri>http://data.gov.uk</uri>
+  </author>
+  <subtitle>Recently created or updated datasets on DGU. Custom query: ''</subtitle>
+  <link href="http://data.gov.uk/feeds/custom.atom?page=3" rel="next"/>
+  <link href="http://data.gov.uk/feeds/custom.atom" rel="first"/>
+  <link href="http://data.gov.uk/feeds/custom.atom?page=563" rel="last"/>
+  <entry>
+    <title>National Coach Services</title>
+    <link href="http://data.gov.uk/dataset/3a3b32f3-d727-4623-aa17-daa2f39aaf92" rel="alternate"/>
+    <id>tag:data.gov.uk,2012:/dataset/3a3b32f3-d727-4623-aa17-daa2f39aaf92</id>
+    <summary type="html">The National Coach Services Database (NCSD) was commissioned by Transport Direct to collect schedules for coach and strategic bus services across Great Britain.  The data is is used by both Transport Direct and traveline for journey planning purposes.  </summary>
+    <link length="22153" href="http://data.gov.uk/api/2/rest/package/national-coach-services" type="application/json" rel="enclosure"/>
+    <category term="Transportation"/>
+    <category term="coach service schedules"/>
+    <updated>2014-09-19T10:28:31Z</updated>
+    <published>2013-04-22T12:21:49Z</published>
+  </entry>
+</feed>
