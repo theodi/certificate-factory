@@ -12,6 +12,13 @@ describe CertificateFactory::Certificate do
     expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}")
   end
 
+  it "generates the correct body when applying a campaign tag" do
+    certificate = CertificateFactory::Certificate.new(@url, campaign: "ckan")
+
+    expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"},\"campaign\":\"ckan\"}")
+  end
+
+
   it "requests certificate creation", :vcr do
     certificate = CertificateFactory::Certificate.new(@url)
     result = certificate.generate

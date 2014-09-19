@@ -7,6 +7,7 @@ module CertificateFactory
     def initialize(options)
       @url = options[:feed]
       @limit = options[:limit] || 20
+      @campaign = options[:campaign]
       @count = 0
       @certificates = []
       @response = self.class.get(@url)
@@ -30,7 +31,7 @@ module CertificateFactory
     end
 
     def generate(url)
-      @certificates << Certificate.new(url).result
+      @certificates << Certificate.new(url, campaign: @campaign).result
     end
 
     def feed_items

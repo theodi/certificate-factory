@@ -36,5 +36,7 @@ By default, this will only generate the first 20 certificates. To generate more 
 
 		rake generate:certificates URL="http://data.gov.uk/feeds/custom.atom" LIMIT=2
 
+Each run against a feed will be tagged with a campaign named with a timestamp. To add a human prefix to the campaign
+name, run the following:
 
-
+	rake generate:certificates URL="http://data.gov.uk/feeds/custom.atom" CAMPAIGN="dgu"
