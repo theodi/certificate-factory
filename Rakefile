@@ -11,7 +11,7 @@ namespace :generate do
 
   task :certificate do
     if ENV['URL']
-      puts CertificateFactory::Certificate.new(ENV['URL']).generate
+      puts CertificateFactory::Certificate.new(ENV['URL']).result
     else
       puts "Please specify a URL to generate a certificate for"
     end
