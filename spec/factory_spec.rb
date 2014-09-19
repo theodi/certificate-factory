@@ -26,7 +26,7 @@ describe CertificateFactory::Factory do
     expect(results.first[:success]).to eq(true)
     expect(results.first[:published]).to eq(true)
     expect(results.first[:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
-    expect(results.first[:dataset_url]).to match /http:\/\/open-data-certificate.dev\/datasets\/[0-9]+/
+    expect(results.first[:certificate_url]).to match /http:\/\/open-data-certificate.dev\/datasets\/[0-9]+\/certificates\/[0-9]+/
   end
 
   it "creates the correct number of certificates when querying a single page", :vcr do

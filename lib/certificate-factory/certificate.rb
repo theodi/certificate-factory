@@ -38,7 +38,7 @@ module CertificateFactory
           success: result["success"],
           published: result["published"],
           documentation_url: @url,
-          dataset_url: dataset_url(result["dataset_id"]),
+          certificate_url: result["certificate_url"],
           user: result["owner_email"]
         }
       else
@@ -65,10 +65,6 @@ module CertificateFactory
             "documentationUrl" => @url
           }
         }.to_json
-      end
-
-      def dataset_url(id)
-        "#{self.class.base_uri}/datasets/#{id}"
       end
 
       def get_result(url)

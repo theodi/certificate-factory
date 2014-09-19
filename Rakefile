@@ -22,8 +22,8 @@ namespace :generate do
       limit = ENV['LIMIT'] ? ENV['LIMIT'].to_i : 20
       results = CertificateFactory::Factory.new(feed: ENV['URL'], limit: limit).build
       CSV.open("results.csv", "w") do |csv|
-        csv << ["Success?", "Published?", "Documenation URL", "Dataset URL", "User"]
-        results.each { |r| csv << [r[:success], r[:published], r[:documentation_url], r[:dataset_url], r[:user]] }
+        csv << ["Success?", "Published?", "Documenation URL", "Certificate URL", "User"]
+        results.each { |r| csv << [r[:success], r[:published], r[:documentation_url], r[:certificate_url], r[:user]] }
       end
       puts "#{limit} certificates generated. See results.csv for results"
     else

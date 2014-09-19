@@ -64,7 +64,7 @@ describe CertificateFactory::Certificate do
     expect(result[:success]).to eq(true)
     expect(result[:published]).to eq(true)
     expect(result[:documentation_url]).to eq(@url)
-    expect(result[:dataset_url]).to match /http:\/\/open-data-certificate.dev\/datasets\/[0-9]+/
+    expect(result[:certificate_url]).to match /http:\/\/open-data-certificate.dev\/datasets\/[0-9]+\/certificates\/[0-9]+/
     expect(result[:user]).to eq(ENV['ODC_USERNAME'])
   end
 
