@@ -8,8 +8,9 @@ module CertificateFactory
     headers 'Content-Type' => 'application/json'
     default_timeout 120
 
-    def initialize(url)
+    def initialize(url, options = {})
       @url = url
+      @campaign = options[:campaign]
     end
 
     def generate
@@ -58,13 +59,15 @@ module CertificateFactory
     private
 
       def body
-        {
+        hash = {
           "jurisdiction" => "gb",
           "create_user" => "true",
           "dataset" => {
             "documentationUrl" => @url
           }
-        }.to_json
+        }
+        hash['campaign'] = @campaign if @campaign
+        hash.to_json
       end
 
       def get_result(url)

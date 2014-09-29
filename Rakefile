@@ -19,8 +19,12 @@ namespace :generate do
 
   task :certificates do
     if ENV['URL']
+      # Create campaign tag
+      campaign = ENV['CAMPAIGN'] ? ENV['CAMPAIGN'] + "-" : "" 
+      campaign += DateTime.now.iso8601
+      # Create factory
       limit = ENV['LIMIT'] ? ENV['LIMIT'].to_i : 20
-      results = CertificateFactory::Factory.new(feed: ENV['URL'], limit: limit).build
+      results = CertificateFactory::Factory.new(feed: ENV['URL'], limit: limit, campaign: campaign).build
       CSV.open("results.csv", "w") do |csv|
         csv << ["Success?", "Published?", "Documenation URL", "Certificate URL", "User"]
         results.each { |r| csv << [r[:success], r[:published], r[:documentation_url], r[:certificate_url], r[:user]] }
