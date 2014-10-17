@@ -61,7 +61,7 @@ module CertificateFactory
       def body
         hash = {
           "jurisdiction" => "gb",
-          "create_user" => "true",
+          "create_user" => true,
           "dataset" => {
             "documentationUrl" => @url
           }
