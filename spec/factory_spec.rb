@@ -20,13 +20,16 @@ describe CertificateFactory::Factory do
 
     factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 1)
 
-    results = factory.build
+    results = []
+    called = 0
+    factory.build do |generate|
+      called += 1
+      expect(generate[:success]).to eq("pending")
+      expect(generate[:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
+      expect(generate[:dataset_url]).to match(%r{http://open-data-certificate.dev/datasets/\d+\.json})
+    end
 
-    expect(results.count).to eq(1)
-    expect(results.first[:success]).to eq(true)
-    expect(results.first[:published]).to eq(true)
-    expect(results.first[:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
-    expect(results.first[:certificate_url]).to match /http:\/\/open-data-certificate.dev\/datasets\/[0-9]+\/certificates\/[0-9]+/
+    expect(called).to eq(1)
   end
 
   it "creates the correct number of certificates when querying a single page", :vcr do
@@ -35,7 +38,10 @@ describe CertificateFactory::Factory do
 
     factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 3)
 
-    results = factory.build
+    results = []
+    factory.build do |result|
+      results << result
+    end
 
     expect(results.count).to eq(3)
 
@@ -54,7 +60,10 @@ describe CertificateFactory::Factory do
 
     factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 3)
 
-    results = factory.build
+    results = []
+    factory.build do |result|
+      results << result
+    end
 
     expect(results.count).to eq(3)
     expect(results[0][:documentation_url]).to eq("http://data.gov.uk/dataset/cambridgeshire-county-council-management-band-pay-scales")
@@ -68,7 +77,10 @@ describe CertificateFactory::Factory do
 
     factory = CertificateFactory::Factory.new(feed: "http://data.gov.uk/feeds/custom.atom", limit: 5)
 
-    results = factory.build
+    results = []
+    factory.build do |result|
+      results << result
+    end
 
     expect(results.count).to eq(1)
   end

@@ -10,6 +10,7 @@ module CertificateFactory
 
     def initialize(url, options = {})
       @url = url
+      @dataset_url = options[:dataset_url]
       @campaign = options[:campaign]
     end
 
@@ -27,6 +28,7 @@ module CertificateFactory
           success: "false",
           published: "false",
           documentation_url: @url,
+          dataset_url: response["dataset_url"],
           error: get_error(response)
         }
       end
@@ -74,7 +76,7 @@ module CertificateFactory
         result = self.class.get(url)
         if result["success"] == "pending"
           sleep 5
-          get_result(url)
+          get_result(result["dataset_url"])
         else
           result
         end

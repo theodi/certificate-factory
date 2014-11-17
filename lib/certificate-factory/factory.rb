@@ -4,6 +4,8 @@ module CertificateFactory
     include HTTParty
     format :xml
 
+    attr_reader :count
+
     def initialize(options)
       @url = options[:feed]
       @limit = options[:limit] || 20
@@ -11,27 +13,25 @@ module CertificateFactory
       @count = 0
       @certificates = []
       @response = self.class.get(@url)
+      @logger = options[:logger]
     end
 
-    def build
+    def build(&block)
       @limit.times do |i|
         if feed_items[i].nil?
           @url = next_page
           unless @url.nil?
+            @logger.debug "feed: #{@url}" if @logger
             @response = self.class.get(@url)
             @limit = @limit - i
-            build
+            build(&block)
           end
         else
           url = get_link(feed_items[i])
-          generate(url)
+          yield Certificate.new(url, campaign: @campaign).generate
+          @count += 1
         end
       end
-      @certificates
-    end
-
-    def generate(url)
-      @certificates << Certificate.new(url, campaign: @campaign).result
     end
 
     def feed_items
