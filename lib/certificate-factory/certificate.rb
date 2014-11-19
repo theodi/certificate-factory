@@ -34,6 +34,37 @@ module CertificateFactory
       end
     end
 
+    def update
+      response = post
+      case response.code
+      when 202
+        {
+          success: "pending",
+          documentation_url: @url,
+          dataset_url: @dataset_url
+        }
+      when 422
+        error = get_error(response)
+        if error == "Dataset already exists"
+          dataset_id = response['dataset_id']
+          response = self.class.post("/datasets/#{dataset_id}/certificates", body: body)
+          {
+            success: response['success'],
+            documentation_url: @url,
+            dataset_url: @dataset_url,
+            error: get_error(response)
+          }
+        else
+          {
+            success: "false",
+            documentation_url: @url,
+            dataset_url: response['dataset_url'],
+            error: error
+          }
+        end
+      end
+    end
+
     def result
       if @dataset_url
         result = get_result(@dataset_url)

@@ -82,3 +82,27 @@ namespace :generate do
   end
 
 end
+
+namespace :update do
+  task :certificate do
+    if ENV['URL']
+      cert = CertificateFactory::Certificate.new(ENV['URL'])
+      gen = cert.update
+      if gen[:success] == "pending" || gen[:success] == true
+        puts gen.inspect
+        result = cert.result
+
+        if result[:published]
+          logger.info "published"
+        end
+        logger.info "user: #{result[:user]}"
+        logger.info "certificate_url: #{result[:certificate_url]}"
+      else
+        logger.error "#{gen[:error]} #{gen[:documentation_url]}"
+        puts gen.inspect
+      end
+    else
+      logger.error "Please specify a URL to generate a certificate for"
+    end
+  end
+end
