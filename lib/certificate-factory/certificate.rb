@@ -104,12 +104,11 @@ module CertificateFactory
       end
 
       def get_result(url)
-        result = self.class.get(url)
-        if result["success"] == "pending"
+        loop do
+          result = self.class.get(url)
+          return result if result["success"] != "pending"
+          url = result["dataset_url"]
           sleep 5
-          get_result(result["dataset_url"])
-        else
-          result
         end
       end
 
