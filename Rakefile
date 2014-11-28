@@ -24,11 +24,11 @@ namespace :generate do
         logger.info "pending: #{gen[:dataset_url]}"
         result = cert.result
 
-        if result[:published]
-          logger.info "published"
+        logger.info "published: #{result[:published]}"
+        if result[:success]
+          logger.info "user: #{result[:user]}"
+          logger.info "certificate_url: #{result[:certificate_url]}"
         end
-        logger.info "user: #{result[:user]}"
-        logger.info "certificate_url: #{result[:certificate_url]}"
       else
         logger.error "#{gen[:error]} #{gen[:documentation_url]}"
         puts gen.inspect
