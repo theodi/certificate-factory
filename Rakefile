@@ -43,7 +43,7 @@ namespace :generate do
       #dated_campaign = [campaign, DateTime.now.iso8601].join('-')
       # Create factory
       output = ENV.fetch("OUTPUT", "#{campaign}.csv")
-      limit = ENV.fetch('LIMIT', 20).to_i
+      limit = ENV['LIMIT'].to_i if ENV['LIMIT']
       factory = CertificateFactory::Factory.new(feed: url, limit: limit, campaign: campaign, logger: logger)
       count = 0
       CSV.open(output, "w") do |csv|
