@@ -28,15 +28,20 @@ To generate a single certificate from a CKAN dataset, run the following:
 
 		rake generate:certificate URL="{CKAN dataset URL}"
 
-To generate multiple certificates run the following:
+To generate multiple certificates as part of a campaign run the following:
 
-		rake generate:certificates URL="http://data.gov.uk/feeds/custom.atom"
+    rake generate:certificates CAMPAIGN=name URL="http://data.gov.uk/feeds/custom.atom"
 
-By default, this will only generate the first 20 certificates. To generate more or less, alter the `LIMIT` parameter like so:
+This will iterate through the feed and queue up all datasets in the feed by default, if you want to limit it specify a `LIMIT` parameter like so:
 
-		rake generate:certificates URL="http://data.gov.uk/feeds/custom.atom" LIMIT=2
+    rake generate:certificates CAMPAIGN=name URL="http://data.gov.uk/feeds/custom.atom" LIMIT=2
 
-Each run against a feed will be tagged with a campaign named with a timestamp. To add a human prefix to the campaign
-name, run the following:
+By default it will store the links to result urls in `CAMPAIGN.csv` you can change this by specifying an `OUTPUT` parameter in case you want a descriptive campaign name but a simpler result outputfile:
 
-	rake generate:certificates URL="http://data.gov.uk/feeds/custom.atom" CAMPAIGN="dgu"
+    rake generate:certificates OUTPUT=output.csv CAMPAIGN=name URL="http://data.gov.uk/feeds/custom.atom" LIMIT=2
+
+If you want to collect the results of the campaign run in a csv file then you can run:
+
+    rake generate:results FILE=output.csv RESULTS=results.csv
+
+Specifying the output of the `generate` task as `FILE`. This will collect the results of the import, waiting for each job to finish.
