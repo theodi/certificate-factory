@@ -39,12 +39,18 @@ namespace :generate do
   end
 
   task :certificates do
-    if (url = ENV['URL']) && (campaign = ENV['CAMPAIGN'])
+    url = ENV['URL']
+    file = ENV['FILE']
+    if (url || file) && (campaign = ENV['CAMPAIGN'])
       #dated_campaign = [campaign, DateTime.now.iso8601].join('-')
       # Create factory
       output = ENV.fetch("OUTPUT", "#{campaign}.csv")
       limit = ENV['LIMIT'].to_i if ENV['LIMIT']
-      factory = CertificateFactory::Factory.new(feed: url, limit: limit, campaign: campaign, logger: logger)
+      if url
+        factory = CertificateFactory::Factory.new(feed: url, limit: limit, campaign: campaign, logger: logger)
+      elsif file
+        factory = CertificateFactory::CSVFactory.new(file: file, limit: limit, campaign: campaign, logger: logger)
+      end
       count = 0
       CSV.open(output, "w") do |csv|
         csv << ["documentation_url", "dataset_url"]

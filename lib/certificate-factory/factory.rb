@@ -64,4 +64,26 @@ module CertificateFactory
       CertificateFactory::API.new(api_url).ckan_url
     end
   end
+
+  class CSVFactory < Factory
+    def initialize(options)
+      @file = options[:file]
+      @limit = options[:limit]
+      @campaign = options[:campaign]
+      @count = 0
+      @logger = options[:logger]
+    end
+
+    def get_link(url)
+      return url
+    end
+
+    def each
+      CSV::foreach(@file, headers: :first_row) do |row|
+        yield row['documentation_url']
+        @count += 1
+        break if over_limit?
+      end
+    end
+  end
 end
