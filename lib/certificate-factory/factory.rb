@@ -11,7 +11,6 @@ module CertificateFactory
       @limit = options[:limit]
       @campaign = options[:campaign]
       @count = 0
-      @certificates = []
       @response = self.class.get(@url)
       @logger = options[:logger]
     end
