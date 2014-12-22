@@ -10,6 +10,7 @@ module CertificateFactory
 
     def initialize(url, options = {})
       @url = url
+      @dataset_url = options[:dataset_url]
       @campaign = options[:campaign]
     end
 
@@ -27,8 +28,25 @@ module CertificateFactory
           success: "false",
           published: "false",
           documentation_url: @url,
+          dataset_url: response["dataset_url"],
           error: get_error(response)
         }
+      end
+    end
+
+    def update
+      response = generate
+      if response[:success] != "pending" && response[:error] == "Dataset already exists"
+        dataset_id = response['dataset_id']
+        response = self.class.post("/datasets/#{dataset_id}/certificates", body: body)
+        {
+          success: response['success'],
+          documentation_url: @url,
+          dataset_url: @dataset_url,
+          error: get_error(response)
+        }
+      else
+        return response
       end
     end
 
@@ -61,7 +79,7 @@ module CertificateFactory
       def body
         hash = {
           "jurisdiction" => "gb",
-          "create_user" => "true",
+          "create_user" => true,
           "dataset" => {
             "documentationUrl" => @url
           }
@@ -71,12 +89,11 @@ module CertificateFactory
       end
 
       def get_result(url)
-        result = self.class.get(url)
-        if result["success"] == "pending"
+        loop do
+          result = self.class.get(url)
+          return result if result["success"] != "pending"
+          url = result["dataset_url"]
           sleep 5
-          get_result(url)
-        else
-          result
         end
       end
 

@@ -9,13 +9,26 @@ describe CertificateFactory::Certificate do
   it "generates the correct body" do
     certificate = CertificateFactory::Certificate.new(@url)
 
-    expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"}}")
+    expect(JSON.parse(certificate.send(:body))).to eq({
+      "jurisdiction" => "gb",
+      "create_user" => true,
+      "dataset" => {
+        "documentationUrl" => @url
+      }
+    })
   end
 
   it "generates the correct body when applying a campaign tag" do
     certificate = CertificateFactory::Certificate.new(@url, campaign: "ckan")
 
-    expect(certificate.send(:body)).to eq("{\"jurisdiction\":\"gb\",\"create_user\":\"true\",\"dataset\":{\"documentationUrl\":\"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report\"},\"campaign\":\"ckan\"}")
+    expect(JSON.parse(certificate.send(:body))).to eq({
+      "jurisdiction" => "gb",
+      "create_user" => true,
+      "dataset" => {
+        "documentationUrl" => @url
+      },
+      "campaign" => "ckan"
+    })
   end
 
 
