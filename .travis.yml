@@ -17,6 +17,3 @@ deploy:
   on:
     tags: true
     repo: theodi/certificate-factory
-after_success:
-- gem install henry
-- bundle exec henry deploy
