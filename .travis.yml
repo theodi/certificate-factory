@@ -1,18 +1,6 @@
+---
 language: ruby
 cache: bundler
 sudo: false
 rvm:
-- 2.1.0
-notifications:
-  irc:
-    channels:
-    - irc.freenode.net#theodi
-    template:
-    - "%{repository} %{branch} - %{message} %{build_url}"
-    on_success: change
-    on_failure: always
-env:
-  global:
-  - BASE_URI='http://open-data-certificate.dev'
-  - secure: w1kS3tl+NK92wmvzdgLelfL8JI1CXyFunVJUJHwpN/evGDGrLxxXiCHP5tLYh/LQ1LuuzHLjLSwUHovRpDVFwS6eP0OOxDxKECIAWb5H2TORKl+70G4H3JRTkOwh9LhbpE6X/3d9za+uSujtXhuYRLZ4cifEigbHfclOqywr92s=
-  - secure: mIPq3Xf91/IC2t2s3uGo1hVXu/nwjVia9cKtA00Kfhxkrp8M3hBzpFtGKuhj5HARkGozpEkBS0jPU3MK93pGHCY8PzhuUAXd0Cpaek59CGfcRNf2TD95z0SrL+HoD9kagvAV9M10L9x5hqEv/lKCHh2S8qxrUbvy9TIdrZyz9aE=
+  - 2.3.1
