@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<BASE_URI>/datasets"
+    body:
+      encoding: UTF-8
+      string: '{"jurisdiction":"gb","create_user":true,"dataset":{"documentationUrl":"http://data.gov.uk/dataset/defence-infrastructure-organisation-disposals-database-house-of-commons-report"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic YXBpQGV4YW1wbGUuY29tOlJhMXY3OFFIRENwYnUxUHEyWENK
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Content-Type:
+      - text/html; charset=utf8
+      X-Pow-Template:
+      - application_not_found
+      Date:
+      - Mon, 18 Jul 2<XPC_SERVICE_NAME>16 13:21:<XPC_SERVICE_NAME><XPC_SERVICE_NAME>
+        GMT
+      Connection:
+      - keep-alive
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PCFkb2N0eXBlIGh0bWw+CjxodG1sPgo8aGVhZD4KICA8bWV0YSBjaGFyc2V0
+        PSJ1dGYtOCI+CiAgPHRpdGxlPkFwcGxpY2F0aW9uIG5vdCBmb3VuZDwvdGl0
+        bGU+CiAgPHN0eWxlPgogICAgYm9keSB7CiAgICAgIG1hcmdpbjogPFhQQ19T
+        RVJWSUNFX05BTUU+OwogICAgICBwYWRkaW5nOiA8WFBDX1NFUlZJQ0VfTkFN
+        RT47CiAgICAgIGJhY2tncm91bmQ6ICNlPFhQQ19TRVJWSUNFX05BTUU+ZTxY
+        UENfU0VSVklDRV9OQU1FPmQ4OwogICAgICBsaW5lLWhlaWdodDogMThweDsK
+        ICAgIH0KICAgIGRpdi5wYWdlIHsKICAgICAgbWFyZ2luOiA3MnB4IGF1dG87
+        CiAgICAgIG1hcmdpbjogMzZweCBhdXRvOwogICAgICBiYWNrZ3JvdW5kOiAj
+        ZmZmOwogICAgICBib3JkZXItcmFkaXVzOiAxOHB4OwogICAgICAtd2Via2l0
+        LWJveC1zaGFkb3c6IDxYUENfU0VSVklDRV9OQU1FPnB4IDJweCA3cHggIzk5
+        OTsKICAgICAgLW1vei1ib3gtc2hhZG93OiA8WFBDX1NFUlZJQ0VfTkFNRT5w
+        eCAycHggN3B4ICM5OTk7CiAgICAgIHBhZGRpbmc6IDM2cHggOTxYUENfU0VS
+        VklDRV9OQU1FPnB4OwogICAgICB3aWR0aDogNDg8WFBDX1NFUlZJQ0VfTkFN
+        RT5weDsKICAgICAgcG9zaXRpb246IHJlbGF0aXZlOwogICAgfQogICAgLmJp
+        ZyBkaXYucGFnZSB7CiAgICAgIHdpZHRoOiA3MjxYUENfU0VSVklDRV9OQU1F
+        PnB4OwogICAgfQogICAgaDEsIGgyLCBwLCBsaSB7CiAgICAgIGZvbnQtZmFt
+        aWx5OiBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7CiAgICAgIGZvbnQtc2l6ZTog
+        MTNweDsKICAgIH0KICAgIGgxIHsKICAgICAgbGluZS1oZWlnaHQ6IDQ1cHg7
+        CiAgICAgIGZvbnQtc2l6ZTogMzZweDsKICAgICAgbWFyZ2luOiA8WFBDX1NF
+        UlZJQ0VfTkFNRT47CiAgICB9CiAgICBoMTpiZWZvcmUgewogICAgICBmb250
+        LXNpemU6IDY2cHg7CiAgICAgIGxpbmUtaGVpZ2h0OiA0MnB4OwogICAgICBw
+        b3NpdGlvbjogYWJzb2x1dGU7CiAgICAgIHJpZ2h0OiA1NzZweDsKICAgIH0K
+        ICAgIC5iaWcgaDE6YmVmb3JlIHsKICAgICAgcmlnaHQ6IDgxOXB4OwogICAg
+        fQogICAgaDEub2sgewogICAgICBjb2xvcjogIzxYUENfU0VSVklDRV9OQU1F
+        PjY8WFBDX1NFUlZJQ0VfTkFNRT47CiAgICB9CiAgICBoMS5vazpiZWZvcmUg
+        ewogICAgICBjb250ZW50OiAi4pyTIjsKICAgICAgY29sb3I6ICM8WFBDX1NF
+        UlZJQ0VfTkFNRT45PFhQQ19TRVJWSUNFX05BTUU+OwogICAgfQogICAgaDEu
+        ZXJyIHsKICAgICAgY29sb3I6ICM2PFhQQ19TRVJWSUNFX05BTUU+PFhQQ19T
+        RVJWSUNFX05BTUU+OwogICAgfQogICAgaDEuZXJyOmJlZm9yZSB7CiAgICAg
+        IGNvbnRlbnQ6ICLinJciOwogICAgICBjb2xvcjogIzk8WFBDX1NFUlZJQ0Vf
+        TkFNRT48WFBDX1NFUlZJQ0VfTkFNRT47CiAgICB9CiAgICBoMiB7CiAgICAg
+        IGxpbmUtaGVpZ2h0OiAyN3B4OwogICAgICBmb250LXNpemU6IDE4cHg7CiAg
+        ICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7CiAgICAgIG1hcmdpbjogPFhQQ19T
+        RVJWSUNFX05BTUU+OwogICAgfQogICAgYSwgcHJlIHNwYW4gewogICAgICBj
+        b2xvcjogIzc3NjsKICAgIH0KICAgIGgyLCBwLCBwcmUgewogICAgICBjb2xv
+        cjogIzIyMjsKICAgIH0KICAgIHByZSB7CiAgICAgIHdoaXRlLXNwYWNlOiBw
+        cmUtd3JhcDsKICAgICAgZm9udC1zaXplOiAxM3B4OwogICAgfQogICAgcHJl
+        LCBjb2RlIHsKICAgICAgZm9udC1mYW1pbHk6IE1lbmxvLCBNb25hY28sIG1v
+        bm9zcGFjZTsKICAgIH0KICAgIHAgY29kZSB7CiAgICAgIGZvbnQtc2l6ZTog
+        MTJweDsKICAgIH0KICAgIHByZS5icmVha291dCB7CiAgICAgIGJvcmRlci10
+        b3A6IDFweCBzb2xpZCAjZGRkOwogICAgICBib3JkZXItYm90dG9tOiAxcHgg
+        c29saWQgI2RkZDsKICAgICAgYmFja2dyb3VuZDogI2ZhZmNmNDsKICAgICAg
+        bWFyZ2luLWxlZnQ6IC05PFhQQ19TRVJWSUNFX05BTUU+cHg7CiAgICAgIG1h
+        cmdpbi1yaWdodDogLTk8WFBDX1NFUlZJQ0VfTkFNRT5weDsKICAgICAgcGFk
+        ZGluZzogOHB4IDxYUENfU0VSVklDRV9OQU1FPiA4cHggOTxYUENfU0VSVklD
+        RV9OQU1FPnB4OwogICAgfQogICAgcHJlLnNtYWxsX3RleHQgewogICAgICBm
+        b250LXNpemU6IDE8WFBDX1NFUlZJQ0VfTkFNRT5weDsKICAgIH0KICAgIHBy
+        ZS5zbWFsbF90ZXh0IHN0cm9uZyB7CiAgICAgIGZvbnQtc2l6ZTogMTNweDsK
+        ICAgIH0KICAgIHVsIHsKICAgICAgcGFkZGluZzogPFhQQ19TRVJWSUNFX05B
+        TUU+OwogICAgfQogICAgbGkgewogICAgICBsaXN0LXN0eWxlLXR5cGU6IG5v
+        bmU7CiAgICB9CiAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keSBjbGFzcz0iIj4K
+        ICA8ZGl2IGNsYXNzPSJwYWdlIj4KICAgIAogIDxoMSBjbGFzcz0iZXJyIj5B
+        cHBsaWNhdGlvbiBub3QgZm91bmQ8L2gxPgogIDxoMj5TeW1saW5rIHlvdXIg
+        YXBwIHRvIDxjb2RlPn4vLnBvdy9vcGVuLWRhdGEtY2VydGlmaWNhdGU8L2Nv
+        ZGU+IGZpcnN0LjwvaDI+CiAgPHNlY3Rpb24+CiAgICA8cD5XaGVuIHlvdSBh
+        Y2Nlc3MgPGNvZGU+PEJBU0VfVVJJPi88L2NvZGU+LCBQb3cgbG9va3MgZm9y
+        IGEgUmFjayBhcHBsaWNhdGlvbiBhdCA8Y29kZT5+Ly5wb3cvb3Blbi1kYXRh
+        LWNlcnRpZmljYXRlPC9jb2RlPi4gVG8gcnVuIHlvdXIgYXBwIGF0IHRoaXMg
+        ZG9tYWluOjwvcD4KICAgIDxwcmU+PHNwYW4+JDwvc3Bhbj4gY2Qgfi8ucG93
+        CjxzcGFuPiQ8L3NwYW4+IGxuIC1zIC9wYXRoL3RvL215YXBwIG9wZW4tZGF0
+        YS1jZXJ0aWZpY2F0ZQo8c3Bhbj4kPC9zcGFuPiBvcGVuIDxCQVNFX1VSST4v
+        PC9wcmU+CiAgPC9zZWN0aW9uPgoKICAgIDx1bD4KICAgICAgPGxpPjxhIGhy
+        ZWY9Imh0dHA6Ly9wb3cuY3gvbWFudWFsIj5Qb3cgVXNlciZyc3F1bztzIE1h
+        bnVhbDwvYT48L2xpPgogICAgICA8bGk+PGEgaHJlZj0iaHR0cHM6Ly9naXRo
+        dWIuY29tL2Jhc2VjYW1wL3Bvdy93aWtpL1Ryb3VibGVzaG9vdGluZyI+VHJv
+        dWJsZXNob290aW5nPC9hPjwvbGk+CiAgICAgIDxsaT48YSBocmVmPSJodHRw
+        czovL2dpdGh1Yi5jb20vYmFzZWNhbXAvcG93L3dpa2kvRkFRIj5GcmVxdWVu
+        dGx5IEFza2VkIFF1ZXN0aW9uczwvYT48L2xpPgogICAgICA8bGk+PGEgaHJl
+        Zj0iaHR0cHM6Ly9naXRodWIuY29tL2Jhc2VjYW1wL3Bvdy9pc3N1ZXMiPklz
+        c3VlIFRyYWNrZXI8L2E+PC9saT4KICAgIDwvdWw+CiAgPC9kaXY+CjwvYm9k
+        eT4KPC9odG1sPgoK
+    http_version: 
+  recorded_at: Mon, 18 Jul 2016 13:21:00 GMT
+recorded_with: VCR 3.0.3
