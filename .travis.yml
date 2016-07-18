@@ -1,6 +1,22 @@
----
 language: ruby
 cache: bundler
 sudo: false
 rvm:
-  - 2.3.1
+- 2.3.1
+env:
+  global:
+  - BASE_URI='http://open-data-certificate.dev'
+  - secure: w1kS3tl+NK92wmvzdgLelfL8JI1CXyFunVJUJHwpN/evGDGrLxxXiCHP5tLYh/LQ1LuuzHLjLSwUHovRpDVFwS6eP0OOxDxKECIAWb5H2TORKl+70G4H3JRTkOwh9LhbpE6X/3d9za+uSujtXhuYRLZ4cifEigbHfclOqywr92s=
+  - secure: mIPq3Xf91/IC2t2s3uGo1hVXu/nwjVia9cKtA00Kfhxkrp8M3hBzpFtGKuhj5HARkGozpEkBS0jPU3MK93pGHCY8PzhuUAXd0Cpaek59CGfcRNf2TD95z0SrL+HoD9kagvAV9M10L9x5hqEv/lKCHh2S8qxrUbvy9TIdrZyz9aE=
+  - secure: T89jTDvzYTgBwJjwjc+Wk1+Mhbh9Orz35LaPCcw3zZ9GIpnYS6FLnMBSf9UrZAYR7ZHJf8vpoPtcVnEBPIORtMImPPJ7TBxIK3pEwzrBMnUBWkP+3BCvJRESFn1mkSePhpTNLjrLYXx8GL+t4yoZKqPuzGWM9rTltbTOzgeD1Hg=
+deploy:
+  provider: rubygems
+  api_key:
+    secure: y8U533/c1vC7oKISdh/C2MVU1nTVq6u85Pz2TaGyIdsOkXaOeMeRMSsyoZkNxY1dO/qMRb790YpSZbHSaAq/y7+v6Z42AFn64R0krRjfA5y/+3hqEIr+Kf5UUk/Q29KHerWVxHMvboMpKP30PwaFtE7MUEUqscqfTUFQFi6TutA=
+  gem: certificate-factory
+  on:
+    tags: true
+    repo: theodi/certificate-factory
+after_success:
+- gem install henry
+- henry deploy
