@@ -1,3 +1,10 @@
+[![Build Status](http://img.shields.io/travis/theodi/certificate-factory.svg?style=flat-square)](https://travis-ci.org/theodi/certificate-factory)
+[![Dependency CI](http://dependencyci.com/github/theodi/certificate-factory/badge?style=flat-square)](http://dependencyci.com/github/theodi/certificate-factory)
+[![Coverage Status](http://img.shields.io/coveralls/theodi/certificate-factory.svg?style=flat-square)](https://coveralls.io/r/theodi/certificate-factory)
+[![Code Climate](http://img.shields.io/codeclimate/github/theodi/certificate-factory.svg?style=flat-square)](https://codeclimate.com/github/theodi/certificate-factory)
+[![Gem Version](http://img.shields.io/gem/v/certificate-factory.svg?style=flat-square)](https://rubygems.org/gems/certificate-factory)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://theodi.mit-license.org)
+
 # Certificate Factory
 
 Automagically generate [Open Data Certificates](https://certificates.theodi.org/)
@@ -8,7 +15,7 @@ from a CKAN Dataset or Data.gov.uk atom feed.
 ## Clone the repo
 
     git clone git@github.com:theodi/certificate-generator.git
-  
+
 ## Add some environment variables
 
 * Create a file named `.env`
@@ -17,11 +24,11 @@ from a CKAN Dataset or Data.gov.uk atom feed.
     BASE_URI='https://certificates.theodi.org/'
     ODC_USERNAME='{YOUR OPEN DATA CERTIFICATE USERNAME}'
     ODC_API_KEY='{YOUR OPEN DATA CERTIFICATE API KEY}'
-		
+
 You can get your API key from your Account page when logged into the Open Data Certificates website
 
 If you are running your own instance of Open Data Certificates (such as on your own machine), simply replace the `BASE_URL` with the URL of the instance you want to generate certificates on.
- 
+
 ## Run some commands!
 
 To generate a single certificate from a CKAN dataset, run the following:
