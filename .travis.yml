@@ -19,4 +19,4 @@ deploy:
     repo: theodi/certificate-factory
 after_success:
 - gem install henry
-- henry deploy
+- bundle exec henry deploy
